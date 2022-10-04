@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, target-densitydpi=device-dpi"/>
+	<title>bluelink</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/@coreui/coreui-pro@4.2.1/dist/css/coreui.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../scss/dataTables.bootstrap4.css">
+	<link rel="stylesheet" type="text/css" href="../scss/style.css">
+</head>
+<body>
+	<div class="wrap">
+		<header>
+			<div class="section">
+				<h1 class="logo"><button class="logo-link"><span class="blind">bluelink uptimecare</span></button></h1>
+                <div class="util">
+                    <button class="link dropdown-toggle" data-coreui-toggle="dropdown" aria-expanded="false"><i class="ico-language"></i></button>
+                    <ul class="dropdown-menu language">
+                        <li><button class="lang-menu">English</button></li>
+                        <li><button class="lang-menu">Korean</button></li>
+                    </ul>
+                    <!-- <button class="link new"><i class="ico-alram new"></i></button> -->
+                    <button class="link"><i class="ico-user"></i><span>Hyundai Motor Group / John smith</span></button>
+                </div>
+			</div>
+		</header>
+        <div class="container">
+            <aside>
+                <ul class="menu">
+                    <li><button class="link-menu"><i class="ico-menu01"></i><span>Dashboard</span></button></li>
+                    <li><button class="link-menu"><i class="ico-menu02"></i><span>Preventive maintenance</span></button></li>
+                    <li><button class="link-menu"><i class="ico-menu03"></i><span>DTC analysis</span></button></li>
+                    <li><button class="link-menu"><i class="ico-menu04"></i><span>Vehicle information</span></button></li>
+                    <li><button class="link-menu new"><i class="ico-menu05"></i><span>Notice</span></button></li>
+                    <li class="on"><button class="link-menu"><i class="ico-menu06"></i><span>System Management</span></button>
+                        <ul class="depth">
+                            <li><button class="link-menu">DTC Standard information</button></li>
+                            <li><button class="link-menu">Preventive maintenance standard infomation</button></li>
+                            <li><button class="link-menu">Notice Management</button></li>
+                            <li><button class="link-menu">Usage history by user</button></li>
+                            <li><button class="link-menu">Account management</button></li>
+                            <li><button class="link-menu">Menu management</button></li>
+                            <li><button class="link-menu">Permission management</button></li>
+                            <li><button class="link-menu on">Code management</button></li>
+                            <li><button class="link-menu">Language management</button></li>
+                        </ul>
+                    </li>
+                </ul>
+                <button class="btn-aside btn-aside-close"></button>
+            </aside>
+            <div class="content">
+                <div class="w-content">
+                    <div class="title-area">
+                        <h3 class="page-title">Code management</h3>
+                        <div class="location">
+                            <span>System management</span>
+                            <span class="on">Code management</span>
+                        </div>
+                    </div>
+
+                    <div class="search-wrap type02">
+                        <div class="group-box mt0">
+                            <div class="inp-group hasbtn">
+                                <!-- <label for="inp1" class="form-label">Permission</label> -->
+                                <input type="text" class="form-control" id="inp1" placeholder="Enter the permission ID and permission name.">
+                                <div class="btn-search">
+                                    <button type="button" class="btn btn-primary">clear</button>
+                                    <button type="button" class="btn btn-primary ico-search"><span class="blind">검색</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <div class="flex-box fix-size">
+                            <div class="flex-items">
+                                <div class="btn-group">
+                                    <button class="btn-save" type="button">Save order</button>
+                                    <button class="btn-add" type="button">Add menu</button>
+                                </div>
+                                <div class="rc-tree-list">
+                                    <div class="rc-tree-list-holder">
+                                        <div>
+                                            <div class="rc-tree-list-holder-inner">
+                                                <div class="rc-tree-treenode rc-tree-treenode-switcher-open rc-tree-treenode-draggable" draggable="true" aria-grabbed="false">
+                                                    <span aria-hidden="true" class="rc-tree-indent"></span>
+                                                    <span class="rc-tree-draggable-icon">↕️</span>
+                                                    <span class="rc-tree-switcher rc-tree-switcher_open"></span>
+                                                    <span class="rc-tree-iconEle rc-tree-icon__customize">
+                                                        <span class="customize-icon">
+                                                            <span class="flag flag-on">ON</span>
+                                                            <div class="btn-box">
+                                                                <button class="btn-add"><span class="blind">추가</span></button>
+                                                                <button class="btn-del"><span class="blind">삭제</span></button>
+                                                            </div>
+                                                        </span>
+                                                    </span>
+                                                    <span class="rc-tree-title">0-0-label</span>
+                                                </div>
+                                                <div class="rc-tree-treenode rc-tree-treenode-switcher-open rc-tree-treenode-draggable" draggable="true" aria-grabbed="false">
+                                                    <span aria-hidden="true" class="rc-tree-indent">
+                                                        <span class="rc-tree-indent-unit rc-tree-indent-unit-start"></span>
+                                                    </span>
+                                                    <span class="rc-tree-draggable-icon">↕️</span>
+                                                    <span class="rc-tree-switcher rc-tree-switcher_open"></span>
+                                                    <span class="rc-tree-iconEle rc-tree-icon__customize">
+                                                        <span class="customize-icon">
+                                                            <span class="flag flag-on">ON</span>
+                                                            <div class="btn-box">
+                                                                <button class="btn-add"><span class="blind">추가</span></button>
+                                                                <button class="btn-del"><span class="blind">삭제</span></button>
+                                                            </div>
+                                                        </span>
+                                                    </span>
+                                                    <span class="rc-tree-title">0-0-label</span>
+                                                </div>
+                                                <div class="rc-tree-treenode rc-tree-treenode-switcher-close rc-tree-treenode-draggable" draggable="true" aria-grabbed="false">
+                                                    <span aria-hidden="true" class="rc-tree-indent">
+                                                        <span class="rc-tree-indent-unit rc-tree-indent-unit-start"></span>
+                                                        <span class="rc-tree-indent-unit rc-tree-indent-unit-start"></span>
+                                                    </span>
+                                                    <span class="rc-tree-draggable-icon">↕️</span>
+                                                    <span class="rc-tree-switcher rc-tree-switcher-noop"></span>
+                                                    <span class="rc-tree-iconEle rc-tree-icon__customize">
+                                                        <span class="customize-icon">
+                                                            <span class="flag flag-on">ON</span>
+                                                            <div class="btn-box">
+                                                                <button class="btn-add"><span class="blind">추가</span></button>
+                                                                <button class="btn-del"><span class="blind">삭제</span></button>
+                                                            </div>
+                                                        </span>
+                                                    </span>
+                                                    <span class="rc-tree-title">0-0-0-0-1-label</span>
+                                                </div>
+                                                <div class="rc-tree-treenode rc-tree-treenode-switcher-close rc-tree-treenode-draggable" draggable="true" aria-grabbed="false">
+                                                    <span aria-hidden="true" class="rc-tree-indent">
+                                                        <span class="rc-tree-indent-unit rc-tree-indent-unit-start"></span>
+                                                        <span class="rc-tree-indent-unit rc-tree-indent-unit-start"></span>
+                                                    </span>
+                                                    <span class="rc-tree-draggable-icon">↕️</span>
+                                                    <span class="rc-tree-switcher rc-tree-switcher_close"></span>
+                                                    <span class="rc-tree-iconEle rc-tree-icon__customize">
+                                                        <span class="customize-icon">
+                                                            <span class="flag flag-on">ON</span>
+                                                            <div class="btn-box">
+                                                                <button class="btn-add"><span class="blind">추가</span></button>
+                                                                <button class="btn-del"><span class="blind">삭제</span></button>
+                                                            </div>
+                                                        </span>
+                                                    </span>
+                                                    <span class="rc-tree-title">0-0-label</span>
+                                                </div>
+                                                <div class="rc-tree-treenode rc-tree-treenode-switcher-open rc-tree-treenode-leaf-last rc-tree-treenode-draggable" draggable="true" aria-grabbed="false">
+                                                    <span aria-hidden="true" class="rc-tree-indent">
+                                                        <span class="rc-tree-indent-unit rc-tree-indent-unit-start"></span>
+                                                        <span class="rc-tree-indent-unit rc-tree-indent-unit-start"></span>
+                                                    </span>
+                                                    <span class="rc-tree-draggable-icon">↕️</span>
+                                                    <span class="rc-tree-switcher rc-tree-switcher_open"></span>
+                                                    <span class="rc-tree-iconEle rc-tree-icon__customize">
+                                                        <span class="customize-icon">
+                                                            <span class="flag flag-on">ON</span>
+                                                            <div class="btn-box">
+                                                                <button class="btn-add"><span class="blind">추가</span></button>
+                                                                <button class="btn-del"><span class="blind">삭제</span></button>
+                                                            </div>
+                                                        </span>
+                                                    </span>
+                                                    <span class="rc-tree-title">0-0-label</span>
+                                                </div>
+                                                <div class="rc-tree-treenode rc-tree-treenode-switcher-close rc-tree-treenode-draggable" draggable="true" aria-grabbed="false">
+                                                    <span aria-hidden="true" class="rc-tree-indent">
+                                                        <span class="rc-tree-indent-unit rc-tree-indent-unit-start"></span>
+                                                        <span class="rc-tree-indent-unit rc-tree-indent-unit-start"></span>
+                                                        <span class="rc-tree-indent-unit rc-tree-indent-unit-end"></span>
+                                                    </span>
+                                                    <span class="rc-tree-draggable-icon">↕️</span>
+                                                    <span class="rc-tree-switcher rc-tree-switcher-noop"></span>
+                                                    <span class="rc-tree-iconEle rc-tree-icon__customize">
+                                                        <span class="customize-icon">
+                                                            <span class="flag flag-off">OFF</span>
+                                                            <div class="btn-box">
+                                                                <button class="btn-add"><span class="blind">추가</span></button>
+                                                                <button class="btn-del"><span class="blind">삭제</span></button>
+                                                            </div>
+                                                        </span>
+                                                    </span>
+                                                    <span class="rc-tree-title">0-0-0-0-1-label</span>
+                                                </div>
+                                                <div class="rc-tree-treenode rc-tree-treenode-switcher-close rc-tree-treenode-leaf-last rc-tree-treenode-draggable" draggable="true" aria-grabbed="false">
+                                                    <span aria-hidden="true" class="rc-tree-indent">
+                                                        <span class="rc-tree-indent-unit rc-tree-indent-unit-start"></span>
+                                                        <span class="rc-tree-indent-unit rc-tree-indent-unit-start"></span>
+                                                        <span class="rc-tree-indent-unit rc-tree-indent-unit-end"></span>
+                                                    </span>
+                                                    <span class="rc-tree-draggable-icon">↕️</span>
+                                                    <span class="rc-tree-switcher rc-tree-switcher-noop"></span>
+                                                    <span class="rc-tree-iconEle rc-tree-icon__customize">
+                                                        <span class="customize-icon">
+                                                            <span class="flag flag-on">ON</span>
+                                                            <div class="btn-box">
+                                                                <button class="btn-add"><span class="blind">추가</span></button>
+                                                                <button class="btn-del"><span class="blind">삭제</span></button>
+                                                            </div>
+                                                        </span>
+                                                    </span>
+                                                    <span class="rc-tree-title">0-0-0-0-1-label</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-items">
+                                <div class="info-mix">
+                                    <div class="img-area">
+                                        <img src="../assets/images/img-select.png" alt="select">
+                                    </div>
+                                    <p>Click the menu name or click the Add Menu button.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/@coreui/coreui-pro@4.2.1/dist/js/coreui.bundle.min.js" crossorigin="anonymous"></script>
+	<script language="JavaScript" type="text/javascript" charset="utf-8" src="../js/jquery-3.6.0.min.js"></script>
+	<script language="JavaScript" type="text/javascript" charset="utf-8" src="../js/ui.js"></script>
+</body>
+</html>

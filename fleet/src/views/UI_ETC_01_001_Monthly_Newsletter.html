@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, target-densitydpi=device-dpi"/>
+	<title>bluelink</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/@coreui/coreui-pro@4.2.1/dist/css/coreui.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../scss/dataTables.bootstrap4.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" type="text/css" href="../scss/style.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        function col3Swiper(){
+            var swiper = new Swiper(".col3-swiper", {
+                slidesPerView: 3,
+                spaceBetween: 0,
+                slidesPerGroup: 3,
+                loop: false,
+                loopFillGroupWithBlank: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: false,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        }
+        if ($('.col3-swiper').length > 0) {col3Swiper();}
+    </script>
+</head>
+<body>
+	<div class="wrap newsletter">
+		<header>
+			<div class="section flex-row">
+                <div class="left">
+                    <h1 class="logo">
+                        <button class="logo-link">
+                            <span class="blind">bluelink Fleet</span>
+                        </button>
+                    </h1>
+                    <p class="date">Oct 31, 2022</p>
+                </div>
+                <div class="right">
+                    <p class="monthly">October, 2022</p>
+                    <p class="tit">Monthly Vehicle Driving & Health Report</p>
+                    <p class="">Power by Bluelink Fleet</p>
+                </div>
+			</div>
+		</header>
+        <div class="container">
+            <div class="top-area">
+                <div class="userInfo">
+                    <dl>
+                        <dt>Owner</dt>
+                        <dd class="name">Vehicle Owner Name</dd>
+                    </dl>
+                </div>
+                <div class="vehicleInfo">
+                    <ul class="list">
+                        <li>
+                            <span>Model</span>
+                            <p>Xcient Fuel Cell</p>
+                        </li>
+                        <li>
+                            <span>VIN</span>
+                            <p>KMFXXXXXXXX123456</p>
+                        </li>
+                        <li>
+                            <span>Vehicle No.</span>
+                            <p>XXXXXXX</p>
+                        </li>
+                        <li>
+                            <span>Bluelink Fleet Subscription</span>
+                            <p>Since DD/MM/YYY</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content">
+                <div>
+                    <div class="head-area">
+                        <h2>Driving Statistics of October, 2022</h2>
+                        <p>※ The data is subject to your actual driving period</p>
+                    </div>
+
+                    <table class="table table-col datatable dataTable no-footer">
+                        <colgroup>
+                            <col style="width:25%" span="4">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th tabindex="0"></th>
+                                <th tabindex="0">Trip Odometer</th>
+                                <th tabindex="0">Statistics for 2022</th>
+                                <th tabindex="0">Statistics for Oct 2022</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Driving Distance</th>
+                                <td>1,000 km</td>
+                                <td>1,000 km</td>
+                                <td>1,000 km</td>
+                            </tr>
+                            <tr>
+                                <th>Hydrogen Consumption</th>
+                                <td class="none">N/A</td>
+                                <td>30 kg</td>
+                                <td>5 kg</td>
+                            </tr>
+                            <tr>
+                                <th>co2 emissions</th>
+                                <td class="none">N/A</td>
+                                <td>100</td>
+                                <td>15</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div>
+                    <div class="head-area">
+                        <h2>Driving Data of October</h2>
+                    </div>
+
+                    <table class="table table-col datatable dataTable no-footer">
+                        <colgroup>
+                            <col style="width:14.285%" span="7">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th tabindex="0" rowspan="2"></th>
+                                <th tabindex="0" rowspan="2">Driving days</th>
+                                <th tabindex="0" colspan="2">Driving dist.</th>
+                                <th tabindex="0" colspan="2">Driving hr.</th>
+                                <th tabindex="0" rowspan="2"></th>
+                            </tr>
+                            <tr>
+                                <th class="leftline" tabindex="0">Driving dist./month</th>
+                                <th tabindex="0">Average Driving dist./day</th>
+                                <th tabindex="0">Driving hr./month</th>
+                                <th tabindex="0">Average Driving hr./day</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>This month</th>
+                                <td>26 days</td>
+                                <td>1,000 km</td>
+                                <td>1,000 km</td>
+                                <td>5h 52m</td>
+                                <td>5h 52m</td>
+                                <td>95 km/h</td>
+                            </tr>
+                            <tr>
+                                <th>Last month</th>
+                                <td>21 days</td>
+                                <td>1,000 km</td>
+                                <td>1,000 km</td>
+                                <td>5h 52m</td>
+                                <td>5h 52m</td>
+                                <td>95 km/h</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div>
+                    <div class="head-area">
+                        <h2>Key System Diagnosis</h2>
+                    </div>
+
+                    <div class="flex">
+                        <div class="flex-item">
+                            <strong>Airbag Control</strong>
+                            <div>
+                                <i class="ico-status status-good">OK</i>
+                                <!-- <span class="text">OK</span> -->
+                            </div>
+                        </div>
+                        <div class="flex-item">
+                            <strong>TPMS</strong>
+                            <div>
+                                <i class="ico-status status-unknown">unknown</i>
+                                <!-- <span class="text">OK</span> -->
+                            </div>
+                        </div>
+                        <div class="flex-item">
+                            <strong>Driving Assistance</strong>
+                            <div>
+                                <i class="ico-status status-caution">caution</i>
+                                <!-- <span class="text">OK</span> -->
+                            </div>
+                        </div>
+                        <div class="flex-item">
+                            <strong>Motor Control</strong>
+                            <div>
+                                <i class="ico-status status-alert">Inspection Required</i>
+                                <!-- <span class="text">Inspection Required</span> -->
+                            </div>
+                        </div>
+                        <div class="flex-item">
+                            <strong>ESC</strong>
+                            <div>
+                                <i class="ico-status status-danger">Inspection Required</i>
+                                <!-- <span class="text">Inspection Required</span> -->
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+
+                <div>
+                    <div class="head-area noflex">
+                        <h2>Message to Valued Customer</h2>
+                        <p>You have almost reached the mileage of the regular inspection (ODO km : 7,800 km)</p>
+                    </div>
+
+                    <div class="slide">
+                        <div class="check-list-bottom">
+                            <div class="swiper col3-swiper">
+                                <div class="swiper-wrapper col3">
+                                    <div class="swiper-slide">
+                                        <div class="swiper-item">
+                                            <div>
+                                                <i class="ico-status status-good">Steering</i>
+                                            </div>
+                                            <ul>
+                                                <li>Connection Part Play</li>
+                                                <li>Oil Leakage</li>
+                                                <li>Oil Level</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="swiper-item">
+                                            <div>
+                                                <i class="ico-status status-good">Brake</i>
+                                            </div>
+                                            <ul>
+                                                <li>Hose And Pipe Condition</li>
+                                                <li>APU Cartridge</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="swiper-item">
+                                            <div>
+                                                <i class="ico-status status-good">Fuel Cell Stack</i>
+                                            </div>
+                                            <ul>
+                                                <li>Ion filter</li>
+                                                <li>Stack Coolant Check</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="swiper-item">
+                                            <div>
+                                                <i class="ico-status status-good">Steering</i>
+                                            </div>
+                                            <ul>
+                                                <li>Connection Part Play</li>
+                                                <li>Oil Leakage</li>
+                                                <li>Oil Level</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="swiper-slide">
+                                        <div class="swiper-item">
+                                            <div>
+                                                <i class="ico-status status-good">Steering</i>
+                                            </div>
+                                            <ul>
+                                                <li>Connection Part Play</li>
+                                                <li>Oil Leakage</li>
+                                                <li>Oil Level</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-btn-group">
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                            <!-- <div class="swiper-pagination"></div> -->
+                        </div>
+                    </div>
+
+                    <div class="text-area">
+                        <p>We strongly recommend that you stop by nearest A/S workshop as soon as possible.</p>
+                        <p>Please feel fee to contact us for any questions.</p>
+                    </div>
+                    <table class="table table-col datatable dataTable no-footer">
+                        <colgroup>
+                            <col style="width:20%">
+                            <col style="width:30%">
+                            <col style="width:20%">
+                            <col style="width:30%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th tabindex="0">Name</th>
+                                <th tabindex="0">Email</th>
+                                <th tabindex="0">Phone no.</th>
+                                <th tabindex="0">Address</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Thor Odinson</th>
+                                <td>godofthunder@email.com</td>
+                                <td>+00 0000-0000</td>
+                                <td>Brooklyn, New York</td>
+                            </tr>
+                            <tr>
+                                <th>Thor Odinson</th>
+                                <td>godofthunder@email.com</td>
+                                <td>+00 0000-0000</td>
+                                <td>Brooklyn, New York</td>
+                            </tr>
+                            <tr>
+                                <th>Thor Odinson</th>
+                                <td>godofthunder@email.com</td>
+                                <td>+00 0000-0000</td>
+                                <td>Brooklyn, New York</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="logo"><button class="logo-link"><span class="blind">HYUNDAI MOTOR GROUP</span></button></div>
+            <div class="f-link">
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Legal Notice</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Hyundai Worldwide</a></li>
+                    <!-- <li><a href="#">TBD</a></li> -->
+                </ul>
+                <p class="copyright">Copyright 2022 hyundai motor company. All right reserved.</p>
+            </div>
+        </footer>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/@coreui/coreui-pro@4.2.1/dist/js/coreui.bundle.min.js" crossorigin="anonymous"></script>
+	<script language="JavaScript" type="text/javascript" charset="utf-8" src="../js/jquery-3.6.0.min.js"></script>
+	<script language="JavaScript" type="text/javascript" charset="utf-8" src="../js/ui.js"></script>
+</body>
+</html>

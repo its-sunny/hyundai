@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, target-densitydpi=device-dpi"/>
+	<title>fleet</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/@coreui/coreui-pro@4.2.1/dist/css/coreui.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../scss/style.css">
+</head>
+<body>
+	<div class="wrap">
+		<header>
+			<div class="section">
+				<h1 class="logo"><button class="logo-link"><span class="blind">bluelink Fleet</span></button></h1>
+                <div class="util">
+                    <div class="dropdown">
+                        <button class="link dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">
+                            Germany
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Germany</a></li>
+                            <li><a class="dropdown-item" href="#">Korean</a></li>
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                        </ul>
+                    </div>
+                    <button class="link"><span>Hyundai Motor Group / John smith</span></button>
+                    <div>
+                        <button class="link"><i class="ico-alram"></i></button>
+                        <button class="link"><i class="ico-logout"></i></button>
+                    </div>
+                </div>
+			</div>
+		</header>
+        <div class="container">
+            <aside>
+                <ul class="menu">
+                    <li><button class="link-menu"><i class="ico-menu01"></i><span>Dashboard</span></button></li>
+                    <li><button class="link-menu"><i class="ico-menu02"></i><span>Vehicle Control</span></button></li>
+                    <li class="on"><button class="link-menu"><i class="ico-menu03"></i><span>Predictive Maintenance</span></button>
+                        <ul class="depth">
+                            <li><button class="link-menu">Predictive Maintenance Status</button></li>
+                            <li><button class="link-menu">VIN List</button></li>
+                        </ul>
+                    </li>
+                    <li><button class="link-menu"><i class="ico-menu04"></i><span>DTC Code</span></button>
+                        <ul class="depth">
+                            <li><button class="link-menu">DTC Code</button></li>
+                            <li><button class="link-menu">DTC Status Check</button></li>
+                            <li><button class="link-menu">Monthly Report History</button></li>
+                        </ul>
+                    </li>
+                    <li><button class="link-menu"><i class="ico-menu05"></i><span>Maintenance</span></button>
+                        <ul class="depth">
+                            <li><button class="link-menu">Maintenance Status</button></li>
+                            <li><button class="link-menu">Maintenance History</button></li>
+                        </ul>
+                    </li>
+                    <li><button class="link-menu"><i class="ico-menu06"></i><span>Safety Control</span></button></li>
+                    <li><button class="link-menu"><i class="ico-menu07"></i><span>Driving Analysis</span></button></li>
+                    <li><button class="link-menu"><i class="ico-menu08"></i><span>Communications</span></button>
+                        <ul class="depth">
+                            <li><button class="link-menu">Notice Board</button></li>
+                            <li><button class="link-menu">Q&A</button></li>
+                        </ul>
+                    </li>
+                    <li><button class="link-menu"><i class="ico-menu09"></i><span>Reference Info.</span></button>
+                        <ul class="depth">
+                            <li><button class="link-menu">Vehicle Mgt.</button></li>
+                            <li><button class="link-menu">Business Vehicle Mgt.</button></li>
+                            <li><button class="link-menu">Provisioning Mgt.</button></li>
+                            <li><button class="link-menu">Fleet Vehicle Group Mgt.</button></li>
+                            <li><button class="link-menu">Maintenance Mgt.</button></li>
+                            <li><button class="link-menu">Dealer Mapping Mgt.</button></li>
+                        </ul>
+                    </li>
+                    <li><button class="link-menu"><i class="ico-menu10"></i><span>System Mgt.</span></button>
+                        <ul class="depth">
+                            <li><button class="link-menu">Notice Board Mgt.</button></li>
+                            <li><button class="link-menu">User Usage History</button></li>
+                            <li><button class="link-menu">Business Mgt.</button></li>
+                            <li><button class="link-menu">Account Mgt.</button></li>
+                            <li><button class="link-menu">Menu Mgt.</button></li>
+                            <li><button class="link-menu">Code Mgt.</button></li>
+                            <li><button class="link-menu">Authority Mgt.</button></li>
+                            <li><button class="link-menu">SMS Mgt.</button></li>
+                            <li><button class="link-menu">Language Mgt.</button></li>
+                        </ul>
+                    </li>
+                </ul>
+                <button class="btn-aside btn-aside-close"></button>
+            </aside>
+            <div class="content">
+                <div class="w-content">
+                    <div class="title-area">
+                        <h3 class="page-title">KMFXXXXXXXX123456</h3>
+                        <div class="desc">
+                            <span class="desc-item">276,320,100 km</span>
+                            <span class="desc-item">DTC</span>
+                            <span class="desc-item">Last Driving : 2022-05-29 17:35 22</span>
+                        </div>
+                    </div>
+
+                    <div class="pred-section">
+                        <div class="tab-area">
+                            <nav>
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                    <button class="nav-link active" id="nav-battery-tab" data-coreui-toggle="tab" data-coreui-target="#nav-battery" type="button" role="tab" aria-controls="nav-battery" aria-selected="true">High Voltage Battery</button>
+                                    <button class="nav-link" id="nav-fuel-tab" data-coreui-toggle="tab" data-coreui-target="#nav-fuel" type="button" role="tab" aria-controls="nav-fuel" aria-selected="false">Fuel Cell Stack</button>
+                                    <button class="nav-link" id="nav-ion-tab" data-coreui-toggle="tab" data-coreui-target="#nav-ion" type="button" role="tab" aria-controls="nav-ionion" aria-selected="false">Ion Filter</button>
+                                </div>
+                            </nav>
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="nav-battery" role="tabpanel" aria-labelledby="nav-battery-tab" tabindex="0">
+                                    <div class="flex-box status-box">
+                                        <div class="flex-item">
+                                            <em class="title">Total Status</em>
+                                            <span class="status ico-safe">83%</span>
+                                        </div>
+                                        <div class="flex-item">
+                                            <em class="title">High Voltage Upper Battery</em>
+                                            <span class="status ico-caution">70%</span>
+                                        </div>
+                                        <div class="flex-item">
+                                            <em class="title">High Voltage Middle Battery</em>
+                                            <span class="status ico-danger">65%</span>
+                                        </div>
+                                        <div class="flex-item">
+                                            <em class="title">High Voltage Lower Battery</em>
+                                            <span class="status ico-danger02">70%</span>
+                                        </div>
+                                    </div>
+                                    <div class="graph-wrap mt40">
+                                        <div class="front-area">
+                                            <ul class="nav nav-box" id="box-tab" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link active" id="box-period-tab" data-coreui-toggle="pill" data-coreui-target="#box-period" type="button" role="tab" aria-controls="box-period" aria-selected="false">Period</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" id="box-odometer-tab" data-coreui-toggle="pill" data-coreui-target="#box-odometer" type="button" role="tab" aria-controls="box-odometer" aria-selected="false">Odometer</button>
+                                                </li>
+                                            </ul>
+                                            <ul class="nav nav-time" id="myTab" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link nav-time-link active" id="day-tab" data-coreui-toggle="tab"  data-coreui-target="#day" type="button" role="tab" aria-controls="day" aria-selected="false">Daily</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link nav-time-link" id="weekly-tab" data-coreui-toggle="tab" data-coreui-target="#weekly" type="button" role="tab" aria-controls="weekly" aria-selected="false">Weekly</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link nav-time-link" id="Weekly2-tab" data-coreui-toggle="tab" data-coreui-target="#Weekly2" type="button" role="tab" aria-controls="Weekly2" aria-selected="true">Weekly</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-content" id="box-tabContent">
+                                            <div class="tab-pane fade show active" id="box-period" role="tabpanel" aria-labelledby="box-period-tab" tabindex="0">
+                                                <div class="graph-draw"></div>
+                                            </div>
+                                            <div class="tab-pane fade" id="box-odometer" role="tabpane2" aria-labelledby="box-odometer-tab" tabindex="0">
+                                                <div class="graph-draw"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex-box md-section">
+                                        <div class="flex-item sm-item mt0">
+                                            <h5 class="title">
+                                                Abnormal Detection
+                                                <button type="button" class="btn btn-tooltip" data-coreui-toggle="tooltip" data-coreui-placement="bottom" title="This is a tool tip explaining Abnormal Detection." data-coreui-original-title="Tooltip text"><span class="blind">Tooltip</span></button>
+                                            </h5>
+                                            <div class="article">
+                                                <div class="img-area">
+                                                    <img src="../assets/images/ico-alert.svg" alt="">
+                                                </div>
+                                                <em class="img-title">Alert</em>
+                                                <p>The balance gap between cells in Battery 1 is widening. Detailed confirmation is recommended.</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex-item md-item mt0">
+                                            <h5 class="title">
+                                                Optimal exchange cycle
+                                                <button type="button" class="btn btn-tooltip" data-coreui-toggle="tooltip" data-coreui-placement="bottom" title="" data-coreui-original-title="Tooltip text"><span class="blind">Tooltip</span></button>
+                                            </h5>
+                                            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link active" id="pills-home-tab" data-coreui-toggle="pill" data-coreui-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Distance driven</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" id="pills-profile-tab" data-coreui-toggle="pill" data-coreui-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Period</button>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content" id="nav-tabContent2">
+                                                <div class="tab-pane fade show active" id="nav-home2" role="tabpanel" aria-labelledby="nav-home2-tab" tabindex="0">
+                                                    <span class="info">[ Unit : 1,000km ]</span>
+                                                    <div class="progress-wrap">
+                                                        <span class="top-text">Distance driven</span>
+                                                        <div class="progress"></div>
+                                                        <span class="bottom-text">Recommended <br>exchange time</span>
+                                                        <span class="item-car" style="left:20%">
+                                                            <span class="text">Cumulative mileage<b>105</b></span>
+                                                        </span>
+                                                        <span class="item-red" style="left:45%">
+                                                            <span class="text">High voltage <br>battery 1<b>120</b></span>
+                                                        </span>
+                                                        <span class="item-green" style="left:55%">
+                                                            <span class="text">High voltage <br>battery 2<b>180</b></span>
+                                                        </span>
+                                                        <span class="item-green" style="left:70%">
+                                                            <span class="text">High voltage <br>battery 2<b>180</b></span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-profile2" role="tabpanel" aria-labelledby="nav-profile2-tab" tabindex="0">2
+                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="nav-fuel" role="tabpanel" aria-labelledby="nav-fuel-tab" tabindex="0">
+                                    <div class="flex-box status-box">
+                                        <div class="flex-item">
+                                            <em class="title">Total Status</em>
+                                            <span class="status ico-safe">83%</span>
+                                        </div>
+                                        <div class="flex-item">
+                                            <em class="title">High Voltage Upper Battery</em>
+                                            <span class="status ico-caution">70%</span>
+                                        </div>
+                                        <div class="flex-item">
+                                            <em class="title">High Voltage Middle Battery</em>
+                                            <span class="status ico-danger">65%</span>
+                                        </div>
+                                        <div class="flex-item">
+                                            <em class="title">High Voltage Lower Battery</em>
+                                            <span class="status ico-danger02">70%</span>
+                                        </div>
+                                    </div>
+                                    <div class="graph-wrap">
+                                        <div class="front-area">
+                                            <ul class="nav nav-box" id="box-tab2" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link active" id="box-period-tab2" data-coreui-toggle="pill" data-coreui-target="#box-period2" type="button" role="tab" aria-controls="box-period2" aria-selected="false">Period</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" id="box-odometer-tab2" data-coreui-toggle="pill" data-coreui-target="#box-odometer2" type="button" role="tab" aria-controls="box-odometer2" aria-selected="false">Odometer</button>
+                                                </li>
+                                            </ul>
+                                            <ul class="nav nav-time" id="myTab2" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link nav-time-link active" id="day-tab-2" data-coreui-toggle="tab"  data-coreui-target="#day-2" type="button" role="tab" aria-controls="day-2" aria-selected="false">Daily</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link nav-time-link" id="weekly-tab-2" data-coreui-toggle="tab" data-coreui-target="#weekly-2" type="button" role="tab" aria-controls="weekly-2" aria-selected="false">Weekly</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link nav-time-link" id="Weekly2-tab-2" data-coreui-toggle="tab" data-coreui-target="#Weekly2-2" type="button" role="tab" aria-controls="Weekly2-2" aria-selected="true">Weekly</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-content" id="box-tabContent2">
+                                            <div class="tab-pane fade show active" id="box-period2" role="tabpanel" aria-labelledby="box-period-tab-2" tabindex="0">
+                                                <div class="graph-draw"></div>
+                                            </div>
+                                            <div class="tab-pane fade" id="box-odometer2" role="tabpane2" aria-labelledby="box-odometer-tab2" tabindex="0">
+                                                <div class="graph-draw"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex-box md-section">
+                                        <div class="flex-item sm-item">
+                                            <h5 class="title">
+                                                Abnormal Detection
+                                                <button type="button" class="btn btn-tooltip" data-coreui-toggle="tooltip" data-coreui-placement="bottom" title="This is a tool tip explaining Abnormal Detection." data-coreui-original-title="Tooltip text"><span class="blind">Tooltip</span></button>
+                                            </h5>
+                                            <div class="article">
+                                                <div class="img-area">
+                                                    <img src="../assets/images/ico-alert.svg" alt="">
+                                                </div>
+                                                <em class="img-title">Alert</em>
+                                                <p>The balance gap between cells in Battery 1 is widening. Detailed confirmation is recommended.</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex-item md-item">
+                                            <h5 class="title">
+                                                Optimal exchange cycle
+                                                <button type="button" class="btn btn-tooltip" data-coreui-toggle="tooltip" data-coreui-placement="bottom" title="" data-coreui-original-title="Tooltip text"><span class="blind">Tooltip</span></button>
+                                            </h5>
+                                            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link active" id="pills-home-tab" data-coreui-toggle="pill" data-coreui-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Distance driven</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" id="pills-profile-tab" data-coreui-toggle="pill" data-coreui-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Period</button>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content" id="nav-tabContent2">
+                                                <div class="tab-pane fade show active" id="nav-home2" role="tabpanel" aria-labelledby="nav-home2-tab" tabindex="0">
+                                                    <span class="info">[ Unit : 1,000km ]</span>
+                                                    <div class="progress-wrap">
+                                                        <span class="top-text">Distance driven</span>
+                                                        <div class="progress"></div>
+                                                        <span class="bottom-text">Recommended <br>exchange time</span>
+                                                        <span class="item-car" style="left:20%">
+                                                            <span class="text">Cumulative mileage<b>105</b></span>
+                                                        </span>
+                                                        <span class="item-red" style="left:45%">
+                                                            <span class="text">High voltage <br>battery 1<b>120</b></span>
+                                                        </span>
+                                                        <span class="item-green" style="left:55%">
+                                                            <span class="text">High voltage <br>battery 2<b>180</b></span>
+                                                        </span>
+                                                        <span class="item-green" style="left:70%">
+                                                            <span class="text">High voltage <br>battery 2<b>180</b></span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-profile2" role="tabpanel" aria-labelledby="nav-profile2-tab" tabindex="0">2
+                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="nav-ion" role="tabpanel" aria-labelledby="nav-ion-tab" tabindex="0">
+                                    <div class="flex-box status-box">
+                                        <div class="flex-item">
+                                            <em class="title">Total Status</em>
+                                            <span class="status ico-safe">83%</span>
+                                        </div>
+                                        <div class="flex-item">
+                                            <em class="title">High Voltage Upper Battery</em>
+                                            <span class="status ico-caution">70%</span>
+                                        </div>
+                                        <div class="flex-item">
+                                            <em class="title">High Voltage Middle Battery</em>
+                                            <span class="status ico-danger">65%</span>
+                                        </div>
+                                        <div class="flex-item">
+                                            <em class="title">High Voltage Lower Battery</em>
+                                            <span class="status ico-danger02">70%</span>
+                                        </div>
+                                    </div>
+                                    <div class="graph-wrap">
+                                        <div class="front-area">
+                                            <ul class="nav nav-box" id="box-tab3" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link active" id="box-period-tab3" data-coreui-toggle="pill" data-coreui-target="#box-period3" type="button" role="tab" aria-controls="box-period3" aria-selected="false">Period</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" id="box-odometer-tab3" data-coreui-toggle="pill" data-coreui-target="#box-odometer3" type="button" role="tab" aria-controls="box-odometer3" aria-selected="false">Odometer</button>
+                                                </li>
+                                            </ul>
+                                            <ul class="nav nav-time" id="myTab3" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link nav-time-link active" id="day-tab-3" data-coreui-toggle="tab"  data-coreui-target="#day-3" type="button" role="tab" aria-controls="day-3" aria-selected="false">Daily</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link nav-time-link" id="weekly-tab-3" data-coreui-toggle="tab" data-coreui-target="#weekly-3" type="button" role="tab" aria-controls="weekly-3" aria-selected="false">Weekly</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link nav-time-link" id="Weekly2-tab-3" data-coreui-toggle="tab" data-coreui-target="#Weekly2-3" type="button" role="tab" aria-controls="Weekly2-3" aria-selected="true">Weekly</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-content" id="box-tabContent3">
+                                            <div class="tab-pane fade show active" id="box-period3" role="tabpanel" aria-labelledby="box-period-tab" tabindex="0">
+                                                <div class="graph-draw"></div>
+                                            </div>
+                                            <div class="tab-pane fade" id="box-odometer3" role="tabpane2" aria-labelledby="box-odometer-tab" tabindex="0">
+                                                <div class="graph-draw"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex-box md-section">
+                                        <div class="flex-item sm-item">
+                                            <h5 class="title">
+                                                Abnormal Detection
+                                                <button type="button" class="btn btn-tooltip" data-coreui-toggle="tooltip" data-coreui-placement="bottom" title="This is a tool tip explaining Abnormal Detection." data-coreui-original-title="Tooltip text"><span class="blind">Tooltip</span></button>
+                                            </h5>
+                                            <div class="article">
+                                                <div class="img-area">
+                                                    <img src="../assets/images/ico-alert.svg" alt="">
+                                                </div>
+                                                <em class="img-title">Alert</em>
+                                                <p>The balance gap between cells in Battery 1 is widening. Detailed confirmation is recommended.</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex-item md-item">
+                                            <h5 class="title">
+                                                Optimal exchange cycle
+                                                <button type="button" class="btn btn-tooltip" data-coreui-toggle="tooltip" data-coreui-placement="bottom" title="" data-coreui-original-title="Tooltip text"><span class="blind">Tooltip</span></button>
+                                            </h5>
+                                            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link active" id="pills-home-tab" data-coreui-toggle="pill" data-coreui-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Distance driven</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" id="pills-profile-tab" data-coreui-toggle="pill" data-coreui-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Period</button>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content" id="nav-tabContent2">
+                                                <div class="tab-pane fade show active" id="nav-home2" role="tabpanel" aria-labelledby="nav-home2-tab" tabindex="0">
+                                                    <span class="info">[ Unit : 1,000km ]</span>
+                                                    <div class="progress-wrap">
+                                                        <span class="top-text">Distance driven</span>
+                                                        <div class="progress"></div>
+                                                        <span class="bottom-text">Recommended <br>exchange time</span>
+                                                        <span class="item-car" style="left:20%">
+                                                            <span class="text">Cumulative mileage<b>105</b></span>
+                                                        </span>
+                                                        <span class="item-red" style="left:45%">
+                                                            <span class="text">High voltage <br>battery 1<b>120</b></span>
+                                                        </span>
+                                                        <span class="item-green" style="left:55%">
+                                                            <span class="text">High voltage <br>battery 2<b>180</b></span>
+                                                        </span>
+                                                        <span class="item-green" style="left:70%">
+                                                            <span class="text">High voltage <br>battery 2<b>180</b></span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-profile2" role="tabpanel" aria-labelledby="nav-profile2-tab" tabindex="0">2
+                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="btn-wrap">
+                        <button type="button" class="btn btn-outline-secondary">Back to List</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="logo"><button class="logo-link"><span class="blind">HYUNDAI MOTOR GROUP</span></button></div>
+            <div class="f-link">
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Legal Notice</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Hyundai Worldwide</a></li>
+                    <!-- <li><a href="#">TBD</a></li> -->
+                </ul>
+                <p class="copyright">Copyright 2022 hyundai motor company. All right reserved.</p>
+            </div>
+        </footer>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/@coreui/coreui-pro@4.2.1/dist/js/coreui.bundle.min.js" crossorigin="anonymous"></script>
+	<script language="JavaScript" type="text/javascript" charset="utf-8" src="../js/jquery-3.6.0.min.js"></script>
+	<script language="JavaScript" type="text/javascript" charset="utf-8" src="../js/ui.js"></script>
+</body>
+</html>

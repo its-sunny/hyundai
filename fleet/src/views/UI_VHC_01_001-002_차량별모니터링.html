@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, target-densitydpi=device-dpi"/>
+	<title>bluelink</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/@coreui/coreui-pro@4.2.1/dist/css/coreui.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../scss/dataTables.bootstrap4.css">
+	<link rel="stylesheet" type="text/css" href="../scss/style.css">
+</head>
+<body>
+	<div class="wrap">
+		<header>
+			<div class="section">
+				<h1 class="logo"><button class="logo-link"><span class="blind">bluelink Fleet</span></button></h1>
+                <div class="util">
+                    <div class="dropdown">
+                        <button class="link dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">
+                            Germany
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Germany</a></li>
+                          <li><a class="dropdown-item" href="#">Korean</a></li>
+                          <li><a class="dropdown-item" href="#">English</a></li>
+                        </ul>
+                    </div>
+                    <button class="link"><span>Hyundai Motor Group / John smith</span></button>
+                    <div>
+                        <button class="link"><i class="ico-alram"></i></button>
+                        <button class="link"><i class="ico-logout"></i></button>
+                    </div>
+                </div>
+			</div>
+		</header>
+
+        <div class="container">
+            <aside>
+                <ul class="menu">
+                    <li><button class="link-menu"><i class="ico-menu01"></i><span>Dashboard</span></button></li>
+                    <li class="on"><button class="link-menu"><i class="ico-menu02"></i><span>Vehicle Control</span></button></li>
+                    <li><button class="link-menu"><i class="ico-menu03"></i><span>Predictive Maintenance</span></button>
+                        <ul class="depth">
+                            <li><button class="link-menu">Predictive Maintenance Status</button></li>
+                            <li><button class="link-menu">VIN List</button></li>
+                        </ul>
+                    </li>
+                    <li><button class="link-menu"><i class="ico-menu04"></i><span>DTC Code</span></button>
+                        <ul class="depth">
+                            <li><button class="link-menu">DTC Code</button></li>
+                            <li><button class="link-menu">DTC Status Check</button></li>
+                            <li><button class="link-menu">Monthly Report History</button></li>
+                        </ul>
+                    </li>
+                    <li><button class="link-menu"><i class="ico-menu05"></i><span>Maintenance</span></button>
+                        <ul class="depth">
+                            <li><button class="link-menu">Maintenance Status</button></li>
+                            <li><button class="link-menu">Maintenance History</button></li>
+                        </ul>
+                    </li>
+                    <li><button class="link-menu"><i class="ico-menu06"></i><span>Safety Control</span></button></li>
+                    <li><button class="link-menu"><i class="ico-menu07"></i><span>Driving Analysis</span></button></li>
+                    <li><button class="link-menu"><i class="ico-menu08"></i><span>Communications</span></button>
+                        <ul class="depth">
+                            <li><button class="link-menu">Notice Board</button></li>
+                            <li><button class="link-menu">Q&A</button></li>
+                        </ul>
+                    </li>
+                    <li><button class="link-menu"><i class="ico-menu09"></i><span>Reference Info.</span></button>
+                        <ul class="depth">
+                            <li><button class="link-menu">Vehicle Mgt.</button></li>
+                            <li><button class="link-menu">Business Vehicle Mgt.</button></li>
+                            <li><button class="link-menu">Provisioning Mgt.</button></li>
+                            <li><button class="link-menu">Fleet Vehicle Group Mgt.</button></li>
+                            <li><button class="link-menu">Maintenance Mgt.</button></li>
+                            <li><button class="link-menu">Dealer Mapping Mgt.</button></li>
+                        </ul>
+                    </li>
+                    <li><button class="link-menu"><i class="ico-menu10"></i><span>System Mgt.</span></button>
+                        <ul class="depth">
+                            <li><button class="link-menu">Notice Board Mgt.</button></li>
+                            <li><button class="link-menu">User Usage History</button></li>
+                            <li><button class="link-menu">Business Mgt.</button></li>
+                            <li><button class="link-menu">Account Mgt.</button></li>
+                            <li><button class="link-menu">Menu Mgt.</button></li>
+                            <li><button class="link-menu">Code Mgt.</button></li>
+                            <li><button class="link-menu">Authority Mgt.</button></li>
+                            <li><button class="link-menu">SMS Mgt.</button></li>
+                            <li><button class="link-menu">Language Mgt.</button></li>
+                        </ul>
+                    </li>
+                </ul>
+                <button class="btn-aside btn-aside-close"></button>
+            </aside>
+            <div class="content hasmap">
+                <div class="w-content">
+                    <div class="map-area">
+                        <div class="map-lnfo">
+                            <div class="flex-box map-in-info">
+                                <div class="flex-item col3">
+                                    <div>
+                                        <span>All Registered Vehicles</span>
+                                        <strong class="text">2,015</strong>
+                                    </div>
+                                    <div>
+                                        <span>Ignition On</span>
+                                        <strong class="text">1,015</strong>
+                                    </div>
+                                    <div>
+                                        <span>Ignition Off</span>
+                                        <strong class="text">1,000</strong>
+                                    </div>
+                                </div>
+                                <div class="flex-item bg-yellow">
+                                    <span>Malfunction</span>
+                                    <strong class="text">20</strong>
+                                </div>
+                                <div class="flex-item bg-green">
+                                    <span>Inspection Required</span>
+                                    <strong class="text">5</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="map-pin-info pin1 on">
+                            <a href="#none"><i class="map-pin"></i></a>
+                            <div>
+                                <p>PIMM119 <span>(Ignition On)</span></p>
+                                <ul class="list-dot">
+                                    <li>Malfunction</li>
+                                    <li>Inspection Required</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="map-pin-info pin2 off">
+                            <a href="#none"><i class="map-pin"></i></a>
+                            <div>
+                                <p>PIMM119 <span>(Ignition Off)</span></p>
+                            </div>
+                        </div>
+                        <div class="map-pin-info pin3 green">
+                            <a href="#none"><i class="map-pin"></i></a>
+                            <div>
+                                <p>PIMM119 <span>(Ignition Off)</span></p>
+                            </div>
+                        </div>
+
+                        <div class="map-pin-info pin4 yellow">
+                            <a href="#none"><i class="map-pin"></i></a>
+                            <div>
+                                <p>PIMM119 <span>(Ignition Off)</span></p>
+                            </div>
+                        </div>
+                        <div class="map-pin-info pin5 yellowOn">
+                            <a href="#none"><i class="map-pin"></i></a>
+                            <div>
+                                <p>PIMM119 <span>(Ignition Off)</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="result-area">
+                <div class="search-area">
+                    <div class="input-group hasbtn">
+                        <input type="text" class="form-control" placeholder="Vin, Fleet, Vehicle Type, Vehicle No…" aria-label="Vin, Fleet, Vehicle Type, Vehicle No…" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-secondary ico-txt-del" type="button" id="button-addon2"><span class="blind">삭제</span></button>
+                        <button class="btn btn-outline-secondary ico-search" type="button" id="button-addon2"><span class="blind">검색</span></button>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="link dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">
+                        Odometer
+                    </button>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Odometer</a></li>
+                    <li><a class="dropdown-item" href="#">Odometer</a></li>
+                    <li><a class="dropdown-item" href="#">Odometer</a></li>
+                    </ul>
+                </div>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <div class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-coreui-toggle="collapse" data-coreui-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                             PIMM119 <span>ELEC CITY</span>
+                            </button>
+                            <div>
+                                <p><span class="flag-item flag-good">Good</span><span class="ignition ignition-off">Ignition Off</span></p>
+                                <ul>
+                                    <li>
+                                        <span>Odometer</span>
+                                        <strong>320,000 km</strong>
+                                    </li>
+                                    <li>
+                                        <span>Remaining amount of hydrogen</span>
+                                        <strong>89 %</strong>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-coreui-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <div>
+                                    <p class="tit">Malfunction</p>
+                                    <div class="history">
+                                        <p>Nov 12, 2022, 21:33:28</p>
+                                        <ul>
+                                            <li>
+                                                <span>Code</span>
+                                                <p>P1BBA04 (EHPS_Bosch_M)</p>
+                                            </li>
+                                            <li>
+                                                <span>Guide</span>
+                                                <p>Power supply overvoltage. Check the battery</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="history">
+                                        <p>Nov 12, 2022, 21:33:28</p>
+                                        <ul>
+                                            <li>
+                                                <span>Code</span>
+                                                <p>P1BBA04 (EHPS_Bosch_M)</p>
+                                            </li>
+                                            <li>
+                                                <span>Guide</span>
+                                                <p>Power supply overvoltage. Check the battery</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="tit">Maintenance</p>
+                                    <div class="history">
+                                        <p>Nov 12, 2022, 21:33:28</p>
+                                        <ul>
+                                            <li>
+                                                <span>Code</span>
+                                                <p>P1BBA04 (EHPS_Bosch_M)</p>
+                                            </li>
+                                            <li>
+                                                <span>Guide</span>
+                                                <p>Power supply overvoltage. Check the battery</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="history">
+                                        <p>Nov 12, 2022, 21:33:28</p>
+                                        <ul>
+                                            <li>
+                                                <span>Code</span>
+                                                <p>P1BBA04 (EHPS_Bosch_M)</p>
+                                            </li>
+                                            <li>
+                                                <span>Guide</span>
+                                                <p>Power supply overvoltage. Check the battery</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-coreui-toggle="collapse" data-coreui-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                PIMM119 <span>ELEC CITY</span>
+                            </button>
+                            <div>
+                                <p><span class="flag-item flag-IR">Inspection Required
+                                </span><span class="ignition ignition-on">Ignition On</span></p>
+                                <ul>
+                                    <li>
+                                        <span>Odometer</span>
+                                        <strong>320,000 km</strong>
+                                    </li>
+                                    <li>
+                                        <span>Remaining amount of hydrogen</span>
+                                        <strong>89 %</strong>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-coreui-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <div>
+                                    <p class="tit">Malfunction</p>
+                                    <div class="history">
+                                        <p>Nov 12, 2022, 21:33:28</p>
+                                        <ul>
+                                            <li>
+                                                <span>Code</span>
+                                                <p>P1BBA04 (EHPS_Bosch_M)</p>
+                                            </li>
+                                            <li>
+                                                <span>Guide</span>
+                                                <p>Power supply overvoltage. Check the battery</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="history">
+                                        <p>Nov 12, 2022, 21:33:28</p>
+                                        <ul>
+                                            <li>
+                                                <span>Code</span>
+                                                <p>P1BBA04 (EHPS_Bosch_M)</p>
+                                            </li>
+                                            <li>
+                                                <span>Guide</span>
+                                                <p>Power supply overvoltage. Check the battery</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="tit">Maintenance</p>
+                                    <div class="history">
+                                        <p>Nov 12, 2022, 21:33:28</p>
+                                        <ul>
+                                            <li>
+                                                <span>Code</span>
+                                                <p>P1BBA04 (EHPS_Bosch_M)</p>
+                                            </li>
+                                            <li>
+                                                <span>Guide</span>
+                                                <p>Power supply overvoltage. Check the battery</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="history">
+                                        <p>Nov 12, 2022, 21:33:28</p>
+                                        <ul>
+                                            <li>
+                                                <span>Code</span>
+                                                <p>P1BBA04 (EHPS_Bosch_M)</p>
+                                            </li>
+                                            <li>
+                                                <span>Guide</span>
+                                                <p>Power supply overvoltage. Check the battery</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-coreui-toggle="collapse" data-coreui-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                PIMM119 <span>ELEC CITY</span>
+                            </button>
+                            <div>
+                                <p><span class="flag-item flag-Malfunction">Malfunction</span><span class="ignition ignition-on">Ignition On</span></p>
+                                <ul>
+                                    <li>
+                                        <span>Odometer</span>
+                                        <strong>320,000 km</strong>
+                                    </li>
+                                    <li>
+                                        <span>Remaining amount of hydrogen</span>
+                                        <strong>89 %</strong>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-coreui-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <div>
+                                    <p class="tit">Malfunction</p>
+                                    <div class="history">
+                                        <p>Nov 12, 2022, 21:33:28</p>
+                                        <ul>
+                                            <li>
+                                                <span>Code</span>
+                                                <p>P1BBA04 (EHPS_Bosch_M)</p>
+                                            </li>
+                                            <li>
+                                                <span>Guide</span>
+                                                <p>Power supply overvoltage. Check the battery</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="history">
+                                        <p>Nov 12, 2022, 21:33:28</p>
+                                        <ul>
+                                            <li>
+                                                <span>Code</span>
+                                                <p>P1BBA04 (EHPS_Bosch_M)</p>
+                                            </li>
+                                            <li>
+                                                <span>Guide</span>
+                                                <p>Power supply overvoltage. Check the battery</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="tit">Maintenance</p>
+                                    <div class="history">
+                                        <p>Nov 12, 2022, 21:33:28</p>
+                                        <ul>
+                                            <li>
+                                                <span>Code</span>
+                                                <p>P1BBA04 (EHPS_Bosch_M)</p>
+                                            </li>
+                                            <li>
+                                                <span>Guide</span>
+                                                <p>Power supply overvoltage. Check the battery</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="history">
+                                        <p>Nov 12, 2022, 21:33:28</p>
+                                        <ul>
+                                            <li>
+                                                <span>Code</span>
+                                                <p>P1BBA04 (EHPS_Bosch_M)</p>
+                                            </li>
+                                            <li>
+                                                <span>Guide</span>
+                                                <p>Power supply overvoltage. Check the battery</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" id="flush-headingfour">
+                            <button class="accordion-button collapsed" type="button" data-coreui-toggle="collapse" data-coreui-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapsefour">
+                             PIMM119 <span>ELEC CITY</span>
+                            </button>
+                            <div>
+                                <p><span class="flag-item flag-good">Good</span><span class="ignition ignition-off">Ignition Off</span></p>
+                                <ul>
+                                    <li>
+                                        <span>Odometer</span>
+                                        <strong>320,000 km</strong>
+                                    </li>
+                                    <li>
+                                        <span>Remaining amount of hydrogen</span>
+                                        <strong>89 %</strong>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="flush-collapsefour" class="accordion-collapse collapse" aria-labelledby="flush-headingfour" data-coreui-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <div>
+                                    <p class="tit">Malfunction</p>
+                                    <div class="history">
+                                        <p>Nov 12, 2022, 21:33:28</p>
+                                        <ul>
+                                            <li>
+                                                <span>Code</span>
+                                                <p>P1BBA04 (EHPS_Bosch_M)</p>
+                                            </li>
+                                            <li>
+                                                <span>Guide</span>
+                                                <p>Power supply overvoltage. Check the battery</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="history">
+                                        <p>Nov 12, 2022, 21:33:28</p>
+                                        <ul>
+                                            <li>
+                                                <span>Code</span>
+                                                <p>P1BBA04 (EHPS_Bosch_M)</p>
+                                            </li>
+                                            <li>
+                                                <span>Guide</span>
+                                                <p>Power supply overvoltage. Check the battery</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="tit">Maintenance</p>
+                                    <div class="history">
+                                        <p>Nov 12, 2022, 21:33:28</p>
+                                        <ul>
+                                            <li>
+                                                <span>Code</span>
+                                                <p>P1BBA04 (EHPS_Bosch_M)</p>
+                                            </li>
+                                            <li>
+                                                <span>Guide</span>
+                                                <p>Power supply overvoltage. Check the battery</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="history">
+                                        <p>Nov 12, 2022, 21:33:28</p>
+                                        <ul>
+                                            <li>
+                                                <span>Code</span>
+                                                <p>P1BBA04 (EHPS_Bosch_M)</p>
+                                            </li>
+                                            <li>
+                                                <span>Guide</span>
+                                                <p>Power supply overvoltage. Check the battery</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="logo"><button class="logo-link"><span class="blind">HYUNDAI MOTOR GROUP</span></button></div>
+            <div class="f-link">
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Legal Notice</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Hyundai Worldwide</a></li>
+                    <!-- <li><a href="#">TBD</a></li> -->
+                </ul>
+                <p class="copyright">Copyright 2022 hyundai motor company. All right reserved.</p>
+            </div>
+        </footer>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/@coreui/coreui-pro@4.2.1/dist/js/coreui.bundle.min.js" crossorigin="anonymous"></script>
+	<script language="JavaScript" type="text/javascript" charset="utf-8" src="../js/jquery-3.6.0.min.js"></script>
+	<script language="JavaScript" type="text/javascript" charset="utf-8" src="../js/ui.js"></script>
+</body>
+</html>

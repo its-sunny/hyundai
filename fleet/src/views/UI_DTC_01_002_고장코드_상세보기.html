@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, target-densitydpi=device-dpi"/>
+	<title>bluelink</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/@coreui/coreui-pro@4.2.1/dist/css/coreui.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="../scss/dataTables.bootstrap4.css">
+	<link rel="stylesheet" type="text/css" href="../scss/style.css">
+</head>
+<body>
+	<div class="wrap">
+		<header>
+			<div class="section">
+				<h1 class="logo"><button class="logo-link"><span class="blind">bluelink Fleet</span></button></h1>
+                <div class="util">
+                    <div class="dropdown">
+                        <button class="link dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">
+                            Germany
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Germany</a></li>
+                            <li><a class="dropdown-item" href="#">Korean</a></li>
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                        </ul>
+                    </div>
+                    <button class="link"><span>Hyundai Motor Group / John smith</span></button>
+                    <div>
+                        <button class="link"><i class="ico-alram"></i></button>
+                        <button class="link"><i class="ico-logout"></i></button>
+                    </div>
+                </div>
+			</div>
+		</header>
+        <div class="container">
+            <aside>
+                <ul class="menu">
+                    <li><button class="link-menu"><i class="ico-menu01"></i><span>Dashboard</span></button></li>
+                    <li><button class="link-menu"><i class="ico-menu02"></i><span>Vehicle Control</span></button></li>
+                    <li><button class="link-menu"><i class="ico-menu03"></i><span>Predictive Maintenance</span></button>
+                        <ul class="depth">
+                            <li><button class="link-menu">Predictive Maintenance Status</button></li>
+                            <li><button class="link-menu">VIN List</button></li>
+                        </ul>
+                    </li>
+                    <li class="on"><button class="link-menu"><i class="ico-menu04"></i><span>DTC Code</span></button>
+                        <ul class="depth">
+                            <li><button class="link-menu">DTC Code</button></li>
+                            <li class="on"><button class="link-menu">DTC Status Check</button></li>
+                            <li><button class="link-menu">Monthly Report History</button></li>
+                        </ul>
+                    </li>
+                    <li><button class="link-menu"><i class="ico-menu05"></i><span>Maintenance</span></button>
+                        <ul class="depth">
+                            <li><button class="link-menu">Maintenance Status</button></li>
+                            <li><button class="link-menu">Maintenance History</button></li>
+                        </ul>
+                    </li>
+                    <li><button class="link-menu"><i class="ico-menu06"></i><span>Safety Control</span></button></li>
+                    <li><button class="link-menu"><i class="ico-menu07"></i><span>Driving Analysis</span></button></li>
+                    <li><button class="link-menu"><i class="ico-menu08"></i><span>Communications</span></button>
+                        <ul class="depth">
+                            <li><button class="link-menu">Notice Board</button></li>
+                            <li><button class="link-menu">Q&A</button></li>
+                        </ul>
+                    </li>
+                    <li><button class="link-menu"><i class="ico-menu09"></i><span>Reference Info.</span></button>
+                        <ul class="depth">
+                            <li><button class="link-menu">Vehicle Mgt.</button></li>
+                            <li><button class="link-menu">Business Vehicle Mgt.</button></li>
+                            <li><button class="link-menu">Provisioning Mgt.</button></li>
+                            <li><button class="link-menu">Fleet Vehicle Group Mgt.</button></li>
+                            <li><button class="link-menu">Maintenance Mgt.</button></li>
+                            <li><button class="link-menu">Dealer Mapping Mgt.</button></li>
+                        </ul>
+                    </li>
+                    <li><button class="link-menu"><i class="ico-menu10"></i><span>System Mgt.</span></button>
+                        <ul class="depth">
+                            <li><button class="link-menu">Notice Board Mgt.</button></li>
+                            <li><button class="link-menu">User Usage History</button></li>
+                            <li><button class="link-menu">Business Mgt.</button></li>
+                            <li><button class="link-menu">Account Mgt.</button></li>
+                            <li><button class="link-menu">Menu Mgt.</button></li>
+                            <li><button class="link-menu">Code Mgt.</button></li>
+                            <li><button class="link-menu">Authority Mgt.</button></li>
+                            <li><button class="link-menu">SMS Mgt.</button></li>
+                            <li><button class="link-menu">Language Mgt.</button></li>
+                        </ul>
+                    </li>
+                </ul>
+                <button class="btn-aside btn-aside-close"></button>
+            </aside>
+            <div class="content dtc-section">
+                <div class="w-content ">
+                    <div class="flex-section dtc-detail-wrap">
+                        <div class="sm-section status">
+                            <div class="dtc-front-head">
+                                <form class="form-wrap">
+                                    <fieldset>
+                                        <div class="inp-basic form-check form-switch">
+                                            <label for="switch" class="form-label"><strong class="dtc-tit"></strong>[FC1245] CAN communication error</strong> </label>
+                                            <input class="form-check-input" type="checkbox" role="switch" id="switch" checked="">
+                                        </div>
+                                    </fieldset>
+                                </form>
+                                <p><span>Danger A</span><span>FCU (0x98)</span><span>2022-05-29 17:35 22</span></p>
+                            </div>
+                            <div class="dtc-content">
+                                <div class="dtc-content-tit">
+                                    <strong>KMFXXXXXXXX123456</strong>
+                                    <p><span>QZ FCEV</span><span>276,320,100 km</span><span>EV</span></p>
+                                </div>
+                                <dl class="dtc-desc-wrap">
+                                    <dt>Description</dt>
+                                    <dd>
+                                        DTC error description here.
+                                        Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.
+                                        When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way. On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. 
+                                    </dd>
+                                    <dt>Recommended Actions</dt>
+                                    <dd>
+                                        Recommended Actions notes here.
+                                        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+                                        A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. 
+                                    </dd>
+                                    <dt>Monitoring Comment</dt>
+                                    <dd>
+                                        Monitoring Comment here.
+                                        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+                                        A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+
+                        <!-- right -->
+                        <div class="sm-section dtc-detail-right">
+                            <div class="dtc-detail-inp">
+                                <h3 class="title">Maintenance History</h3>
+                                <button class="btn-add-new">new</button>
+                                <div class="dtc-inp-box dtc-write">
+                                    <div class="dtc-rightbox-head">
+                                        <strong>New</strong>
+                                    </div>
+                                    <div class="dtc-rightbox-body">
+                                        <div class="form-section">
+                                            <fieldset class="form-item">
+                                                <div class="inp-group">
+                                                    <label for="sel" class="form-label">Grade</label>
+                                                    <div class="form-select-wrap">
+                                                        <select class="form-select" aria-label="Default select">
+                                                            <option selected="">select</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                            
+                                            <fieldset class="form-item">
+                                                <div class="inp-group type2">
+                                                    <label for="inp2" class="form-label">Replacement Parts No.</label>
+                                                    <input type="text" class="form-control" placeholder="5digits
+                                                    " aria-label="Replacement part number 1">
+                                                    <span class="input-group-text">~</span>
+                                                    <input type="text" class="form-control" placeholder="10digits" aria-label="Replacement part number 2">
+                                                </div>
+                                            </fieldset>
+                                            <fieldset class="form-item">
+                                                <div class="inp-basic">
+                                                    <span class="form-label">Note</span>
+                                                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                    <div class="dtc-rightbox-btngroup">
+                                        <div class="btn-group btn-flex-btn" role="group" aria-label="Basic">
+                                            <button type="button" class="btn btn-primary btn-cancel-color">Cancel</button>
+                                            <button type="button" class="btn btn-primary btn-submit-color" type="submit">Submit</button>
+                                            </div>
+                                    </div>
+                                </div>
+
+                                <div class="dtc-inp-box dtc-view">
+                                    <div class="dtc-rightbox-body">
+                                        <button class="btn-modify">Modify</button>
+                                        <button class="btn-delete">delete</button>
+                                        <ul class="dtc-info">
+                                            <li>
+                                                <em class="bagde colGood">Good</em>
+                                                <!-- 
+                                                    <em class="bagde colCaution">Caution</em>
+                                                    <em class="bagde colAlert">Alert</em>
+                                                    <em class="bagde colDanger">Danger</em>
+                                                    <em class="bagde colUnkown">Unkown</em>
+                                                 -->
+                                                <span>adminmaster@email.com</span>
+                                                <ul>
+                                                    <li>29-05-2022 07:38:52 PM EST</li>
+                                                    <li>Bluelink Fleet</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <em>Replaced Part No.</em>
+                                                <span>M1234 – A123456</span>
+                                            </li>
+                                            <li>
+                                                <em>Note</em>
+                                                <div>DTC error description here.
+                                                    Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="dtc-inp-box dtc-write">
+                                    <div class="dtc-rightbox-head">
+                                        <strong>EDIT</strong>
+                                    </div>
+                                    <div class="dtc-rightbox-body">
+                                        <div class="form-section">
+                                            <fieldset class="form-item">
+                                                <div class="inp-group">
+                                                    <label for="sel" class="form-label">Grade</label>
+                                                    <div class="form-select-wrap">
+                                                        <select class="form-select" aria-label="Default select">
+                                                            <option selected="">select</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                            
+                                            <fieldset class="form-item">
+                                                <div class="inp-group type2">
+                                                    <label for="inp2" class="form-label">Replacement Parts No.</label>
+                                                    <input type="text" class="form-control" placeholder="5digits
+                                                    " aria-label="Replacement part number 1">
+                                                    <span class="input-group-text">~</span>
+                                                    <input type="text" class="form-control" placeholder="10digits" aria-label="Replacement part number 2">
+                                                </div>
+                                            </fieldset>
+                                            <fieldset class="form-item">
+                                                <div class="inp-basic">
+                                                    <span class="form-label">Note</span>
+                                                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                    <div class="dtc-rightbox-btngroup">
+                                        <div class="btn-group btn-flex-btn" role="group" aria-label="Basic">
+                                            <button type="button" class="btn btn-primary btn-cancel-color">Cancel</button>
+                                            <button type="button" class="btn btn-primary btn-submit-color" type="submit">Submit</button>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- right -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="logo"><button class="logo-link"><span class="blind">HYUNDAI MOTOR GROUP</span></button></div>
+            <div class="f-link">
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Legal Notice</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Hyundai Worldwide</a></li>
+                    <!-- <li><a href="#">TBD</a></li> -->
+                </ul>
+                <p class="copyright">Copyright 2022 hyundai motor company. All right reserved.</p>
+            </div>
+        </footer>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/@coreui/coreui-pro@4.2.1/dist/js/coreui.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script language="JavaScript" type="text/javascript" charset="utf-8" src="../js/jquery-3.6.0.min.js"></script>
+	<script language="JavaScript" type="text/javascript" charset="utf-8" src="../js/ui.js"></script>
+</body>
+</html>

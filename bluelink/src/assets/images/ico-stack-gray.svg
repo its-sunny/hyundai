@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35" height="36">
+    <path fill-rule="evenodd" stroke="#FFF" fill="#8E9BBC" d="m3.5 7.5 18-3.447v19L3.5 26.5v-19z"/>
+    <path fill-rule="evenodd" stroke="#FFF" fill="#8E9BBC" d="m6.5 10.117 18-3.447v19l-18 3.447v-19z"/>
+    <path fill-rule="evenodd" stroke="#FFF" fill="#8E9BBC" d="m9.5 12.734 18-3.447v19l-18 3.447v-19z"/>
+    <path fill-rule="evenodd" fill="#FFF" d="M22.5 13.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2zM14.5 24.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+    <path fill-rule="evenodd" stroke="#8E9BBC" fill="#FFF" d="M24.5 18.386a7 7 0 1 1 0 14 7 7 0 0 1 0-14z"/>
+    <text font-family="Pretendard" fill="#8E9BBC" font-weight="bold" font-size="9" x="19.5" y="29.5">H</text>
+    <text font-family="Pretendard" fill="#8E9BBC" font-size="6" x="26.5" y="29.5">2</text>
+</svg>

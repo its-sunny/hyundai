@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, target-densitydpi=device-dpi"/>
+	<title>bluelink</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/@coreui/coreui-pro@4.2.1/dist/css/coreui.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../scss/style.css">
+</head>
+<body>
+	<div class="wrap">
+		<header>
+			<div class="section">
+				<h1 class="logo"><button class="logo-link"><span class="blind">bluelink uptimecare</span></button></h1>
+                <div class="util">
+                    <button class="link dropdown-toggle" data-coreui-toggle="dropdown" aria-expanded="false"><i class="ico-language"></i></button>
+                    <ul class="dropdown-menu language">
+                        <li><button class="lang-menu">English</button></li>
+                        <li><button class="lang-menu">Korean</button></li>
+                    </ul>
+                    <!-- <button class="link new"><i class="ico-alram new"></i></button> -->
+                    <button class="link"><i class="ico-user"></i><span>Hyundai Motor Group / John smith</span></button>
+                </div>
+			</div>
+		</header>
+        <div class="container">
+            <aside>
+                <ul class="menu">
+                    <li><button class="link-menu"><i class="ico-menu01"></i><span>Dashboard</span></button></li>
+                    <li><button class="link-menu"><i class="ico-menu02"></i><span>Preventive maintenance</span></button></li>
+                    <li><button class="link-menu"><i class="ico-menu03"></i><span>DTC analysis</span></button></li>
+                    <li><button class="link-menu"><i class="ico-menu04"></i><span>Vehicle information</span></button></li>
+                    <li><button class="link-menu new"><i class="ico-menu05"></i><span>Notice</span></button></li>
+                    <li class="on"><button class="link-menu"><i class="ico-menu06"></i><span>System Management</span></button>
+                        <ul class="depth">
+                            <li><button class="link-menu">DTC Standard information</button></li>
+                            <li><button class="link-menu">Preventive maintenance standard infomation</button></li>
+                            <li><button class="link-menu">Notice Management</button></li>
+                            <li><button class="link-menu">Usage history by user</button></li>
+                            <li><button class="link-menu">Account management</button></li>
+                            <li><button class="link-menu">Menu management</button></li>
+                            <li><button class="link-menu on">Permission management</button></li>
+                            <li><button class="link-menu">Code management</button></li>
+                            <li><button class="link-menu">Language management</button></li>
+                        </ul>
+                    </li>
+                </ul>
+                <button class="btn-aside btn-aside-close"></button>
+            </aside>
+            <div class="content">
+                <div class="w-content">
+                    <div class="title-area">
+                        <h3 class="page-title">Permission management</h3>
+                        <div class="location">
+                            <span>System management</span>
+                            <span class="on">Permission management</span>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <div class="article-title">
+                            <h4 class="title">General operator <span>[auth_oeration]</span></h4>
+                            <div class="flag-wrap">
+                                <span class="flag-item flag-green">IN USE</span>
+                                <span class="flag-item flag-gray">Stop USING</span>
+                            </div>
+                            <span class="desc"><span class="date">2022-10-31</span>You can view/operate menus for which permission is granted.</span>
+                            <div class="btn-wrap">
+                                <button class="btn btn-primary btn-sm btn-tbl" type="submit">Modify</button>
+                                <button type="button" class="btn btn-outline-secondary btn-sm btn-tbl">Cancel</button>
+                            </div>
+                        </div>
+
+                        <div class="list-group">
+                            <h5 class="title">Access rights</h5>
+                            <div class="flex-box">
+                                <div class="flex-item disable">
+                                    <h6 class="list-title">Preventive maintenance</h6>
+                                    <ul class="list-item">
+                                        <li>Overall status of preventive maintenance</li>
+                                        <li>List by VIN</li>
+                                        <li>list by item</li>
+                                    </ul>
+                                </div>
+                                <div class="flex-item">
+                                    <h6 class="list-title">DTC analysis</h6>
+                                    <ul class="list-item">
+                                        <li>DTC Overall Status</li>
+                                        <li>List by DTC</li>
+                                        <li>Manager analysis history</li>
+                                    </ul>
+                                </div>
+                                <div class="flex-item disble">
+                                    <h6 class="list-title">Vehicle information</h6>
+                                    <ul class="list-item">
+                                        <li>Vehicle information</li>
+                                    </ul>
+                                </div>
+                                <div class="flex-item">
+                                    <h6 class="list-title">Notice</h6>
+                                    <ul class="list-item">
+                                        <li>Notice</li>
+                                    </ul>
+                                </div>
+                                <div class="flex-item">
+                                    <h6 class="list-title">System Management</h6>
+                                    <ul class="list-item">
+                                        <li class="disable">DTC reference information</li>
+                                        <li class="disable">Preventive maintenance</li>
+                                        <li class="disable">standard information</li>
+                                        <li class="disable">Exchange cycle for each item</li>
+                                        <li class="disable">Notice management</li>
+                                        <li class="disable">Usage history by user</li>
+                                        <li class="disable">Account Management</li>
+                                        <li class="disable">Menu management</li>
+                                        <li class="disable">Permission Management</li>
+                                        <li class="disable">Code management</li>
+                                        <li>Language Management</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-wrap">
+                        <button type="button" class="btn btn-outline-secondary">Back to List</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/@coreui/coreui-pro@4.2.1/dist/js/coreui.bundle.min.js" crossorigin="anonymous"></script>
+	<script language="JavaScript" type="text/javascript" charset="utf-8" src="../js/jquery-3.6.0.min.js"></script>
+	<script language="JavaScript" type="text/javascript" charset="utf-8" src="../js/ui.js"></script>
+</body>
+</html>

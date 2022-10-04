@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, target-densitydpi=device-dpi"/>
+	<title>bluelink</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/@coreui/coreui-pro@4.2.1/dist/css/coreui.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../scss/dataTables.bootstrap4.css">
+	<link rel="stylesheet" type="text/css" href="../scss/style.css">
+</head>
+<body>
+	<div class="wrap">
+		<header>
+			<div class="section">
+				<h1 class="logo"><button class="logo-link"><span class="blind">bluelink Fleet</span></button></h1>
+                <div class="util">
+                    <div class="dropdown">
+                        <button class="link dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">
+                            Germany
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Germany</a></li>
+                            <li><a class="dropdown-item" href="#">Korean</a></li>
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                        </ul>
+                    </div>
+                    <button class="link"><span>Hyundai Motor Group / John smith</span></button>
+                    <div>
+                        <button class="link"><i class="ico-alram"></i></button>
+                        <button class="link"><i class="ico-logout"></i></button>
+                    </div>
+                </div>
+			</div>
+		</header>
+        <div class="container">
+            <aside>
+                <ul class="menu">
+                    <li><button class="link-menu"><i class="ico-menu01"></i><span>Dashboard</span></button></li>
+                    <li><button class="link-menu"><i class="ico-menu02"></i><span>Vehicle Control</span></button></li>
+                    <li><button class="link-menu"><i class="ico-menu03"></i><span>Predictive Maintenance</span></button>
+                        <ul class="depth">
+                            <li><button class="link-menu">Predictive Maintenance Status</button></li>
+                            <li><button class="link-menu">VIN List</button></li>
+                        </ul>
+                    </li>
+                    <li><button class="link-menu"><i class="ico-menu04"></i><span>DTC Code</span></button>
+                        <ul class="depth">
+                            <li><button class="link-menu">DTC Code</button></li>
+                            <li><button class="link-menu">DTC Status Check</button></li>
+                            <li><button class="link-menu">Monthly Report History</button></li>
+                        </ul>
+                    </li>
+                    <li><button class="link-menu"><i class="ico-menu05"></i><span>Maintenance</span></button>
+                        <ul class="depth">
+                            <li><button class="link-menu">Maintenance Status</button></li>
+                            <li><button class="link-menu">Maintenance History</button></li>
+                        </ul>
+                    </li>
+                    <li><button class="link-menu"><i class="ico-menu06"></i><span>Safety Control</span></button></li>
+                    <li><button class="link-menu"><i class="ico-menu07"></i><span>Driving Analysis</span></button></li>
+                    <li><button class="link-menu"><i class="ico-menu08"></i><span>Communications</span></button>
+                        <ul class="depth">
+                            <li><button class="link-menu">Notice Board</button></li>
+                            <li><button class="link-menu">Q&A</button></li>
+                        </ul>
+                    </li>
+                    <li><button class="link-menu"><i class="ico-menu09"></i><span>Reference Info.</span></button>
+                        <ul class="depth">
+                            <li><button class="link-menu">Vehicle Mgt.</button></li>
+                            <li><button class="link-menu">Business Vehicle Mgt.</button></li>
+                            <li><button class="link-menu">Provisioning Mgt.</button></li>
+                            <li><button class="link-menu">Fleet Vehicle Group Mgt.</button></li>
+                            <li><button class="link-menu">Maintenance Mgt.</button></li>
+                            <li><button class="link-menu">Dealer Mapping Mgt.</button></li>
+                        </ul>
+                    </li>
+                    <li class="on"><button class="link-menu"><i class="ico-menu10"></i><span>System Mgt.</span></button>
+                        <ul class="depth">
+                            <li><button class="link-menu">Notice Board Mgt.</button></li>
+                            <li><button class="link-menu">User Usage History</button></li>
+                            <li><button class="link-menu">Business Mgt.</button></li>
+                            <li><button class="link-menu">Account Mgt.</button></li>
+                            <li class="on"><button class="link-menu">Menu Mgt.</button></li>
+                            <li><button class="link-menu">Code Mgt.</button></li>
+                            <li><button class="link-menu">Authority Mgt.</button></li>
+                            <li><button class="link-menu">SMS Mgt.</button></li>
+                            <li><button class="link-menu">Language Mgt.</button></li>
+                        </ul>
+                    </li>
+                </ul>
+                <button class="btn-aside btn-aside-close"></button>
+            </aside>
+            <div class="content">
+                <div class="w-content">
+                    <div class="title-area">
+                        <h3 class="page-title">Menu Mgt.</h3>
+                    </div>
+
+                    <div class="sys-section">
+                        <!--  -->
+                        <div class="section mt30">
+                            <div class="flex-box">
+                                <div class="flex-item">
+                                    <div class="btn-group">
+                                        <button class="btn-save" type="button">Save order</button>
+                                        <button class="btn-add" type="button">Add menu</button>
+                                    </div>
+                                    <div role="tree" class="rc-tree">
+                                        <div class="rc-tree-list">
+                                            <div class="rc-tree-list-holder">
+                                                <div>
+                                                    <div class="rc-tree-list-holder-inner">
+                                                        <div class="rc-tree-treenode rc-tree-treenode-switcher-close rc-tree-treenode-draggable" draggable="true" aria-grabbed="false">
+                                                            <span aria-hidden="true" class="rc-tree-indent"></span>
+                                                            <span class="rc-tree-draggable-icon">↕</span>
+                                                            <span class="rc-tree-switcher rc-tree-switcher-noop"></span>
+
+                                                            <span title="대시보드" class="rc-tree-node-content-wrapper rc-tree-node-content-wrapper-normal">
+                                                                <span class="rc-tree-iconEle rc-tree-icon__customize">
+                                                                    <div class="customize-icon">
+                                                                        <span class="flag flag-off">OFF</span>
+                                                                        <div class="btn-box">
+                                                                            <button type="button" class="btn-add"><span class="blind">추가</span></button>
+                                                                            <button type="button" class="btn-del"><span class="blind">삭제</span></button>
+                                                                        </div>
+                                                                    </div>
+                                                                </span>
+
+                                                                <span class="rc-tree-title">대시보드</span>
+                                                            </span>
+
+                                                        </div>
+                                
+                                                        <div class="rc-tree-treenode rc-tree-treenode-switcher-open rc-tree-treenode-draggable" draggable="true" aria-grabbed="false">
+                                                            <span aria-hidden="true" class="rc-tree-indent"></span>
+                                                            <span class="rc-tree-draggable-icon">↕</span>
+                                                            <span class="rc-tree-switcher rc-tree-switcher_open"></span>
+                                                            <span title="예방정비" class="rc-tree-node-content-wrapper rc-tree-node-content-wrapper-open">
+                                                                <span class="rc-tree-iconEle rc-tree-icon__customize">
+                                                                    <div class="customize-icon">
+                                                                        <span class="flag flag-on">ON</span>
+                                                                        <div class="btn-box">
+                                                                            <button type="button" class="btn-add">
+                                                                                <span class="blind">추가</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </span>
+                                                                <span class="rc-tree-title">예방정비</span>
+                                                            </span>
+                                                        </div>
+                                
+                                                        <div class="rc-tree-treenode rc-tree-treenode-switcher-close rc-tree-treenode-draggable" draggable="true" aria-grabbed="false">
+                                                            <span aria-hidden="true" class="rc-tree-indent">
+                                                                <span class="rc-tree-indent-unit"></span>
+                                                            </span>
+                                                            <span class="rc-tree-draggable-icon">↕</span>
+                                                            <span class="rc-tree-switcher rc-tree-switcher-noop"></span>
+                                                            <span title="예방정비 종합현황" class="rc-tree-node-content-wrapper rc-tree-node-content-wrapper-normal">
+                                                                <span class="rc-tree-iconEle rc-tree-icon__customize">
+                                                                    <div class="customize-icon">
+                                                                        <span class="flag flag-on">ON</span>
+                                                                        <div class="btn-box">
+                                                                            <button type="button" class="btn-del">
+                                                                                <span class="blind">삭제</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </span>
+                                                                <span class="rc-tree-title">예방정비 종합현황</span>
+                                                            </span>
+                                                        </div>
+                                                        
+                                                        <div class="rc-tree-treenode rc-tree-treenode-switcher-close rc-tree-treenode-draggable" draggable="true" aria-grabbed="false">
+                                                            <span aria-hidden="true" class="rc-tree-indent">
+                                                                <span class="rc-tree-indent-unit"></span>
+                                                            </span>
+                                                            <span class="rc-tree-draggable-icon">↕</span>
+                                                            <span class="rc-tree-switcher rc-tree-switcher-noop"></span>
+                                                            <span title="VIN별 리스트" class="rc-tree-node-content-wrapper rc-tree-node-content-wrapper-normal">
+                                                                <span class="rc-tree-iconEle rc-tree-icon__customize">
+                                                                    <div class="customize-icon">
+                                                                        <span class="flag flag-on">ON</span>
+                                                                        <div class="btn-box">
+                                                                            <button type="button" class="btn-del">
+                                                                                <span class="blind">삭제</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </span>
+                                                                <span class="rc-tree-title">VIN별 리스트</span>
+                                                            </span>
+                                                        </div>
+                                
+                                                        <div class="rc-tree-treenode rc-tree-treenode-switcher-close rc-tree-treenode-leaf-last rc-tree-treenode-draggable" draggable="true" aria-grabbed="false">
+                                                            <span aria-hidden="true" class="rc-tree-indent">
+                                                                <span class="rc-tree-indent-unit"></span>
+                                                            </span>
+                                                            <span class="rc-tree-draggable-icon">↕</span>
+                                                            <span class="rc-tree-switcher rc-tree-switcher-noop"></span>
+                                                            <span title="아이템별 리스트" class="rc-tree-node-content-wrapper rc-tree-node-content-wrapper-normal">
+                                                                <span class="rc-tree-iconEle rc-tree-icon__customize">
+                                                                    <div class="customize-icon">
+                                                                        <span class="flag flag-off">OFF</span>
+                                                                        <div class="btn-box">
+                                                                            <button type="button" class="btn-del">
+                                                                                <span class="blind">삭제</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </span>
+                                                                <span class="rc-tree-title">아이템별 리스트</span>
+                                                            </span>
+                                                        </div>
+                                                        
+                                                        <div class="rc-tree-treenode rc-tree-treenode-switcher-close rc-tree-treenode-draggable" draggable="true" aria-grabbed="false">
+                                                            <span aria-hidden="true" class="rc-tree-indent"></span>
+                                                            <span class="rc-tree-draggable-icon">↕</span>
+                                                            <span class="rc-tree-switcher rc-tree-switcher_close"></span>
+                                                            <span title="DTC 분석" class="rc-tree-node-content-wrapper rc-tree-node-content-wrapper-close">
+                                                                <span class="rc-tree-iconEle rc-tree-icon__customize">
+                                                                    <div class="customize-icon">
+                                                                        <span class="flag flag-on">ON</span>
+                                                                        <div class="btn-box">
+                                                                            <button type="button" class="btn-add">
+                                                                                <span class="blind">추가</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </span>
+                                                                <span class="rc-tree-title">DTC 분석</span>
+                                                            </span>
+                                                        </div>
+                                
+                                                        <div class="rc-tree-treenode rc-tree-treenode-switcher-close rc-tree-treenode-draggable" draggable="true" aria-grabbed="false">
+                                                            <span aria-hidden="true" class="rc-tree-indent"></span>
+                                                            <span class="rc-tree-draggable-icon">↕</span>
+                                                            <span class="rc-tree-switcher rc-tree-switcher_close"></span>
+                                                            <span title="신규_하위메뉴1_수정" class="rc-tree-node-content-wrapper rc-tree-node-content-wrapper-close">
+                                                                <span class="rc-tree-iconEle rc-tree-icon__customize">
+                                                                    <div class="customize-icon">
+                                                                        <span class="flag flag-on">ON</span>
+                                                                        <div class="btn-box">
+                                                                            <button type="button" class="btn-add">
+                                                                                <span class="blind">추가</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </span>
+                                                                <span class="rc-tree-title">신규_하위메뉴1_수정</span>
+                                                            </span>
+                                                        </div>
+                                
+                                                        <div class="rc-tree-treenode rc-tree-treenode-switcher-close rc-tree-treenode-draggable" draggable="true" aria-grabbed="false">
+                                                            <span aria-hidden="true" class="rc-tree-indent"></span>
+                                                            <span class="rc-tree-draggable-icon">↕</span>
+                                                            <span class="rc-tree-switcher rc-tree-switcher-noop"></span>
+                                                            <span title="신규메뉴테스트" class="rc-tree-node-content-wrapper rc-tree-node-content-wrapper-normal">
+                                                                <span class="rc-tree-iconEle rc-tree-icon__customize">
+                                                                    <div class="customize-icon">
+                                                                        <span class="flag flag-on">ON</span>
+                                                                        <div class="btn-box">
+                                                                            <button type="button" class="btn-add">
+                                                                                <span class="blind">추가</span>
+                                                                            </button>
+                                                                            <button type="button" class="btn-del">
+                                                                                <span class="blind">삭제</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </span>
+                                                                <span class="rc-tree-title">신규메뉴테스트</span>
+                                                            </span>
+                                                        </div>
+                                
+                                                        <div class="rc-tree-treenode rc-tree-treenode-switcher-close rc-tree-treenode-draggable" draggable="true" aria-grabbed="false">
+                                                            <span aria-hidden="true" class="rc-tree-indent"></span>
+                                                            <span class="rc-tree-draggable-icon">↕</span>
+                                                            <span class="rc-tree-switcher rc-tree-switcher-noop"></span>
+                                                            <span title="차량 정보" class="rc-tree-node-content-wrapper rc-tree-node-content-wrapper-normal">
+                                                                <span class="rc-tree-iconEle rc-tree-icon__customize">
+                                                                    <div class="customize-icon">
+                                                                        <span class="flag flag-off">OFF</span>
+                                                                        <div class="btn-box">
+                                                                            <button type="button" class="btn-add">
+                                                                                <span class="blind">추가</span>
+                                                                            </button>
+                                                                            <button type="button" class="btn-del">
+                                                                                <span class="blind">삭제</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </span>
+                                                                <span class="rc-tree-title">차량 정보</span>
+                                                            </span>
+                                                        </div>
+                                
+                                                        <div class="rc-tree-treenode rc-tree-treenode-switcher-close rc-tree-treenode-draggable" draggable="true" aria-grabbed="false">
+                                                            <span aria-hidden="true" class="rc-tree-indent"></span>
+                                                            <span class="rc-tree-draggable-icon">↕</span>
+                                                            <span class="rc-tree-switcher rc-tree-switcher-noop"></span>
+                                                            <span title="공지사항" class="rc-tree-node-content-wrapper rc-tree-node-content-wrapper-normal">
+                                                                <span class="rc-tree-iconEle rc-tree-icon__customize">
+                                                                    <div class="customize-icon">
+                                                                        <span class="flag flag-off">OFF</span>
+                                                                        <div class="btn-box">
+                                                                            <button type="button" class="btn-add">
+                                                                                <span class="blind">추가</span>
+                                                                            </button>
+                                                                            <button type="button" class="btn-del">
+                                                                                <span class="blind">삭제</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </span>
+                                                                <span class="rc-tree-title">공지사항</span>
+                                                            </span>
+                                                        </div>
+                                
+                                                        <div class="rc-tree-treenode rc-tree-treenode-switcher-close rc-tree-treenode-draggable" draggable="true" aria-grabbed="false">
+                                                            <span aria-hidden="true" class="rc-tree-indent"></span>
+                                                            <span class="rc-tree-draggable-icon">↕</span>
+                                                            <span class="rc-tree-switcher rc-tree-switcher_close"></span>
+                                                            <span title="시스템관리" class="rc-tree-node-content-wrapper rc-tree-node-content-wrapper-close">
+                                                                <span class="rc-tree-iconEle rc-tree-icon__customize">
+                                                                    <div class="customize-icon">
+                                                                        <span class="flag flag-on">ON</span>
+                                                                        <div class="btn-box">
+                                                                            <button type="button" class="btn-add">
+                                                                                <span class="blind">추가</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </span>
+                                                                <span class="rc-tree-title">시스템관리</span>
+                                                            </span>
+                                                        </div>
+                                
+                                                        <div class="rc-tree-treenode rc-tree-treenode-switcher-close rc-tree-treenode-draggable" draggable="true" aria-grabbed="false">
+                                                            <span aria-hidden="true" class="rc-tree-indent"></span>
+                                                            <span class="rc-tree-draggable-icon">↕</span>
+                                                            <span class="rc-tree-switcher rc-tree-switcher_close"></span>
+                                                            <span title="신규메뉴테스트" class="rc-tree-node-content-wrapper rc-tree-node-content-wrapper-close">
+                                                                <span class="rc-tree-iconEle rc-tree-icon__customize">
+                                                                    <div class="customize-icon">
+                                                                        <span class="flag flag-on">ON</span>
+                                                                        <div class="btn-box">
+                                                                            <button type="button" class="btn-add">
+                                                                                <span class="blind">추가</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </span>
+                                                                <span class="rc-tree-title">신규메뉴테스트</span>
+                                                            </span>
+                                                        </div>
+                                
+                                                        <div class="rc-tree-treenode rc-tree-treenode-switcher-close rc-tree-treenode-leaf-last rc-tree-treenode-draggable" draggable="true" aria-grabbed="false">
+                                                            <span aria-hidden="true" class="rc-tree-indent"></span>
+                                                            <span class="rc-tree-draggable-icon">↕</span>
+                                                            <span class="rc-tree-switcher rc-tree-switcher-noop"></span>
+                                                            <span title="20220712Test" class="rc-tree-node-content-wrapper rc-tree-node-content-wrapper-normal">
+                                                                <span class="rc-tree-iconEle rc-tree-icon__customize">
+                                                                    <div class="customize-icon">
+                                                                        <span class="flag flag-off">OFF</span>
+                                                                        <div class="btn-box">
+                                                                            <button type="button" class="btn-add">
+                                                                                <span class="blind">추가</span>
+                                                                            </button>
+                                                                            <button type="button" class="btn-del">
+                                                                                <span class="blind">삭제</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </span>
+                                                                <span class="rc-tree-title">20220712Test</span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex-item flex-sm">
+                                    <div class="info-mix flex-column">
+                                        <div class="img-area">
+                                            <img src="../assets/images/ico_listNone.svg" alt="select">
+                                        </div>
+                                        <p>Click the menu name or click the Add Menu button.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <!--  -->
+                        <div class="section mt30">
+                            <div class="flex-box">
+                                <div class="flex-item">
+                                    <div class="btn-group">
+                                        <button class="btn-save" type="button">Save order</button>
+                                        <button class="btn-add" type="button">Add menu</button>
+                                    </div>
+                                    <div role="tree" class="rc-tree">
+                                        <div class="rc-tree-list">
+                                            <div class="rc-tree-list-holder">
+                                                <div>
+                                                    <div class="rc-tree-list-holder-inner">
+                                                        <div class="rc-tree-treenode rc-tree-treenode-switcher-close rc-tree-treenode-draggable" draggable="true" aria-grabbed="false">
+                                                            <span aria-hidden="true" class="rc-tree-indent"></span>
+                                                            <span class="rc-tree-draggable-icon">↕</span>
+                                                            <span class="rc-tree-switcher rc-tree-switcher-noop"></span>
+
+                                                            <span title="대시보드" class="rc-tree-node-content-wrapper rc-tree-node-content-wrapper-normal">
+                                                                <span class="rc-tree-iconEle rc-tree-icon__customize">
+                                                                    <div class="customize-icon">
+                                                                        <span class="flag flag-off">OFF</span>
+                                                                        <div class="btn-box">
+                                                                            <button type="button" class="btn-add"><span class="blind">추가</span></button>
+                                                                            <button type="button" class="btn-del"><span class="blind">삭제</span></button>
+                                                                        </div>
+                                                                    </div>
+                                                                </span>
+
+                                                                <span class="rc-tree-title">대시보드</span>
+                                                            </span>
+
+                                                        </div>
+                                
+                                                        <div class="rc-tree-treenode rc-tree-treenode-switcher-open rc-tree-treenode-draggable" draggable="true" aria-grabbed="false">
+                                                            <span aria-hidden="true" class="rc-tree-indent"></span>
+                                                            <span class="rc-tree-draggable-icon">↕</span>
+                                                            <span class="rc-tree-switcher rc-tree-switcher_open"></span>
+                                                            <span title="예방정비" class="rc-tree-node-content-wrapper rc-tree-node-content-wrapper-open">
+                                                                <span class="rc-tree-iconEle rc-tree-icon__customize">
+                                                                    <div class="customize-icon">
+                                                                        <span class="flag flag-on">ON</span>
+                                                                        <div class="btn-box">
+                                                                            <button type="button" class="btn-add">
+                                                                                <span class="blind">추가</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </span>
+                                                                <span class="rc-tree-title">예방정비</span>
+                                                            </span>
+                                                        </div>
+                                
+                                                        <div class="rc-tree-treenode rc-tree-treenode-switcher-close rc-tree-treenode-draggable" draggable="true" aria-grabbed="false">
+                                                            <span aria-hidden="true" class="rc-tree-indent">
+                                                                <span class="rc-tree-indent-unit"></span>
+                                                            </span>
+                                                            <span class="rc-tree-draggable-icon">↕</span>
+                                                            <span class="rc-tree-switcher rc-tree-switcher-noop"></span>
+                                                            <span title="예방정비 종합현황" class="rc-tree-node-content-wrapper rc-tree-node-content-wrapper-normal">
+                                                                <span class="rc-tree-iconEle rc-tree-icon__customize">
+                                                                    <div class="customize-icon">
+                                                                        <span class="flag flag-on">ON</span>
+                                                                        <div class="btn-box">
+                                                                            <button type="button" class="btn-del">
+                                                                                <span class="blind">삭제</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </span>
+                                                                <span class="rc-tree-title">예방정비 종합현황</span>
+                                                            </span>
+                                                        </div>
+                                                        
+                                                        <div class="rc-tree-treenode rc-tree-treenode-switcher-close rc-tree-treenode-draggable" draggable="true" aria-grabbed="false">
+                                                            <span aria-hidden="true" class="rc-tree-indent">
+                                                                <span class="rc-tree-indent-unit"></span>
+                                                            </span>
+                                                            <span class="rc-tree-draggable-icon">↕</span>
+                                                            <span class="rc-tree-switcher rc-tree-switcher-noop"></span>
+                                                            <span title="VIN별 리스트" class="rc-tree-node-content-wrapper rc-tree-node-content-wrapper-normal">
+                                                                <span class="rc-tree-iconEle rc-tree-icon__customize">
+                                                                    <div class="customize-icon">
+                                                                        <span class="flag flag-on">ON</span>
+                                                                        <div class="btn-box">
+                                                                            <button type="button" class="btn-del">
+                                                                                <span class="blind">삭제</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </span>
+                                                                <span class="rc-tree-title">VIN별 리스트</span>
+                                                            </span>
+                                                        </div>
+                                
+                                                        <div class="rc-tree-treenode rc-tree-treenode-switcher-close rc-tree-treenode-leaf-last rc-tree-treenode-draggable" draggable="true" aria-grabbed="false">
+                                                            <span aria-hidden="true" class="rc-tree-indent">
+                                                                <span class="rc-tree-indent-unit"></span>
+                                                            </span>
+                                                            <span class="rc-tree-draggable-icon">↕</span>
+                                                            <span class="rc-tree-switcher rc-tree-switcher-noop"></span>
+                                                            <span title="아이템별 리스트" class="rc-tree-node-content-wrapper rc-tree-node-content-wrapper-normal">
+                                                                <span class="rc-tree-iconEle rc-tree-icon__customize">
+                                                                    <div class="customize-icon">
+                                                                        <span class="flag flag-off">OFF</span>
+                                                                        <div class="btn-box">
+                                                                            <button type="button" class="btn-del">
+                                                                                <span class="blind">삭제</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </span>
+                                                                <span class="rc-tree-title">아이템별 리스트</span>
+                                                            </span>
+                                                        </div>
+                                                        
+                                                        <div class="rc-tree-treenode rc-tree-treenode-switcher-close rc-tree-treenode-draggable" draggable="true" aria-grabbed="false">
+                                                            <span aria-hidden="true" class="rc-tree-indent"></span>
+                                                            <span class="rc-tree-draggable-icon">↕</span>
+                                                            <span class="rc-tree-switcher rc-tree-switcher_close"></span>
+                                                            <span title="DTC 분석" class="rc-tree-node-content-wrapper rc-tree-node-content-wrapper-close">
+                                                                <span class="rc-tree-iconEle rc-tree-icon__customize">
+                                                                    <div class="customize-icon">
+                                                                        <span class="flag flag-on">ON</span>
+                                                                        <div class="btn-box">
+                                                                            <button type="button" class="btn-add">
+                                                                                <span class="blind">추가</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </span>
+                                                                <span class="rc-tree-title">DTC 분석</span>
+                                                            </span>
+                                                        </div>
+                                
+                                                        <div class="rc-tree-treenode rc-tree-treenode-switcher-close rc-tree-treenode-draggable" draggable="true" aria-grabbed="false">
+                                                            <span aria-hidden="true" class="rc-tree-indent"></span>
+                                                            <span class="rc-tree-draggable-icon">↕</span>
+                                                            <span class="rc-tree-switcher rc-tree-switcher_close"></span>
+                                                            <span title="신규_하위메뉴1_수정" class="rc-tree-node-content-wrapper rc-tree-node-content-wrapper-close">
+                                                                <span class="rc-tree-iconEle rc-tree-icon__customize">
+                                                                    <div class="customize-icon">
+                                                                        <span class="flag flag-on">ON</span>
+                                                                        <div class="btn-box">
+                                                                            <button type="button" class="btn-add">
+                                                                                <span class="blind">추가</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </span>
+                                                                <span class="rc-tree-title">신규_하위메뉴1_수정</span>
+                                                            </span>
+                                                        </div>
+                                
+                                                        <div class="rc-tree-treenode rc-tree-treenode-switcher-close rc-tree-treenode-draggable" draggable="true" aria-grabbed="false">
+                                                            <span aria-hidden="true" class="rc-tree-indent"></span>
+                                                            <span class="rc-tree-draggable-icon">↕</span>
+                                                            <span class="rc-tree-switcher rc-tree-switcher-noop"></span>
+                                                            <span title="신규메뉴테스트" class="rc-tree-node-content-wrapper rc-tree-node-content-wrapper-normal">
+                                                                <span class="rc-tree-iconEle rc-tree-icon__customize">
+                                                                    <div class="customize-icon">
+                                                                        <span class="flag flag-on">ON</span>
+                                                                        <div class="btn-box">
+                                                                            <button type="button" class="btn-add">
+                                                                                <span class="blind">추가</span>
+                                                                            </button>
+                                                                            <button type="button" class="btn-del">
+                                                                                <span class="blind">삭제</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </span>
+                                                                <span class="rc-tree-title">신규메뉴테스트</span>
+                                                            </span>
+                                                        </div>
+                                
+                                                        <div class="rc-tree-treenode rc-tree-treenode-switcher-close rc-tree-treenode-draggable" draggable="true" aria-grabbed="false">
+                                                            <span aria-hidden="true" class="rc-tree-indent"></span>
+                                                            <span class="rc-tree-draggable-icon">↕</span>
+                                                            <span class="rc-tree-switcher rc-tree-switcher-noop"></span>
+                                                            <span title="차량 정보" class="rc-tree-node-content-wrapper rc-tree-node-content-wrapper-normal">
+                                                                <span class="rc-tree-iconEle rc-tree-icon__customize">
+                                                                    <div class="customize-icon">
+                                                                        <span class="flag flag-off">OFF</span>
+                                                                        <div class="btn-box">
+                                                                            <button type="button" class="btn-add">
+                                                                                <span class="blind">추가</span>
+                                                                            </button>
+                                                                            <button type="button" class="btn-del">
+                                                                                <span class="blind">삭제</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </span>
+                                                                <span class="rc-tree-title">차량 정보</span>
+                                                            </span>
+                                                        </div>
+                                
+                                                        <div class="rc-tree-treenode rc-tree-treenode-switcher-close rc-tree-treenode-draggable" draggable="true" aria-grabbed="false">
+                                                            <span aria-hidden="true" class="rc-tree-indent"></span>
+                                                            <span class="rc-tree-draggable-icon">↕</span>
+                                                            <span class="rc-tree-switcher rc-tree-switcher-noop"></span>
+                                                            <span title="공지사항" class="rc-tree-node-content-wrapper rc-tree-node-content-wrapper-normal">
+                                                                <span class="rc-tree-iconEle rc-tree-icon__customize">
+                                                                    <div class="customize-icon">
+                                                                        <span class="flag flag-off">OFF</span>
+                                                                        <div class="btn-box">
+                                                                            <button type="button" class="btn-add">
+                                                                                <span class="blind">추가</span>
+                                                                            </button>
+                                                                            <button type="button" class="btn-del">
+                                                                                <span class="blind">삭제</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </span>
+                                                                <span class="rc-tree-title">공지사항</span>
+                                                            </span>
+                                                        </div>
+                                
+                                                        <div class="rc-tree-treenode rc-tree-treenode-switcher-close rc-tree-treenode-draggable" draggable="true" aria-grabbed="false">
+                                                            <span aria-hidden="true" class="rc-tree-indent"></span>
+                                                            <span class="rc-tree-draggable-icon">↕</span>
+                                                            <span class="rc-tree-switcher rc-tree-switcher_close"></span>
+                                                            <span title="시스템관리" class="rc-tree-node-content-wrapper rc-tree-node-content-wrapper-close">
+                                                                <span class="rc-tree-iconEle rc-tree-icon__customize">
+                                                                    <div class="customize-icon">
+                                                                        <span class="flag flag-on">ON</span>
+                                                                        <div class="btn-box">
+                                                                            <button type="button" class="btn-add">
+                                                                                <span class="blind">추가</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </span>
+                                                                <span class="rc-tree-title">시스템관리</span>
+                                                            </span>
+                                                        </div>
+                                
+                                                        <div class="rc-tree-treenode rc-tree-treenode-switcher-close rc-tree-treenode-draggable" draggable="true" aria-grabbed="false">
+                                                            <span aria-hidden="true" class="rc-tree-indent"></span>
+                                                            <span class="rc-tree-draggable-icon">↕</span>
+                                                            <span class="rc-tree-switcher rc-tree-switcher_close"></span>
+                                                            <span title="신규메뉴테스트" class="rc-tree-node-content-wrapper rc-tree-node-content-wrapper-close">
+                                                                <span class="rc-tree-iconEle rc-tree-icon__customize">
+                                                                    <div class="customize-icon">
+                                                                        <span class="flag flag-on">ON</span>
+                                                                        <div class="btn-box">
+                                                                            <button type="button" class="btn-add">
+                                                                                <span class="blind">추가</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </span>
+                                                                <span class="rc-tree-title">신규메뉴테스트</span>
+                                                            </span>
+                                                        </div>
+                                
+                                                        <div class="rc-tree-treenode rc-tree-treenode-switcher-close rc-tree-treenode-leaf-last rc-tree-treenode-draggable" draggable="true" aria-grabbed="false">
+                                                            <span aria-hidden="true" class="rc-tree-indent"></span>
+                                                            <span class="rc-tree-draggable-icon">↕</span>
+                                                            <span class="rc-tree-switcher rc-tree-switcher-noop"></span>
+                                                            <span title="20220712Test" class="rc-tree-node-content-wrapper rc-tree-node-content-wrapper-normal">
+                                                                <span class="rc-tree-iconEle rc-tree-icon__customize">
+                                                                    <div class="customize-icon">
+                                                                        <span class="flag flag-off">OFF</span>
+                                                                        <div class="btn-box">
+                                                                            <button type="button" class="btn-add">
+                                                                                <span class="blind">추가</span>
+                                                                            </button>
+                                                                            <button type="button" class="btn-del">
+                                                                                <span class="blind">삭제</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </span>
+                                                                <span class="rc-tree-title">20220712Test</span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex-item flex-sm noline">
+                                    <div class="menu-add type2 line">
+                                        <form class="form-wrap">
+                                            <fieldset>
+                                                <div class="inp-basic">
+                                                    <label for="sel" class="form-label">Menu level</label>
+                                                    <div class="form-select-wrap">
+                                                        <select class="form-select" id="sel">
+                                                            <option selected="">Select menu level</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="inp-basic">
+                                                    <label for="sel2" class="form-label">Top menu</label>
+                                                    <div class="inp-group">
+                                                        <div class="inp-in">
+                                                            <div class="form-select-wrap">
+                                                                <select class="form-select" id="sel2">
+                                                                    <option selected="">Select 1depth menu</option>
+                                                                    <option value="1">One</option>
+                                                                    <option value="2">Two</option>
+                                                                    <option value="3">Three</option>
+                                                                </select>
+                                                            </div>
+                                                            
+                                                            <div class="form-select-wrap mt15">
+                                                                <select class="form-select">
+                                                                    <option selected="">Select 2depth menu</option>
+                                                                    <option value="1">One</option>
+                                                                    <option value="2">Two</option>
+                                                                    <option value="3">Three</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="inp-basic">
+                                                    <span class="form-label">Menu name</span>
+                                                    <div class="in-group">
+                                                        <div class="inp-in">
+                                                            <label for="inp3" class="form-label">KOR</label>
+                                                            <input type="text" class="form-control" id="inp3" placeholder="Enter the Korean menu name.">
+                                                        </div>
+                                                        <div class="inp-in">
+                                                            <label for="inp0" class="form-label">ENG</label>
+                                                            <input type="text" class="form-control" id="inp0" value="" placeholder="Enter the English menu name.">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="inp-basic">
+                                                    <label for="inp1" class="form-label">Menu URL</label>
+                                                    <input type="text" class="form-control" id="inp1" placeholder="Enter the menu URL">
+                                                </div>
+                                                <div class="inp-basic form-check form-switch">
+                                                    <label for="switch" class="form-label">Menu Status</label>
+                                                    <input class="form-check-input" type="checkbox" role="switch" id="switch" checked="">
+                                                </div>
+                                            </fieldset>
+                                        </form>
+                                    </div>
+                                    <div class="btn-wrap mt20 right">
+                                        <button type="button" class="btn btn-outline-secondary btn-sm btn-tbl">Cancel</button>
+                                        <button class="btn btn-primary btn-sm btn-tbl" type="submit">Save</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="logo"><button class="logo-link"><span class="blind">HYUNDAI MOTOR GROUP</span></button></div>
+            <div class="f-link">
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Legal Notice</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Hyundai Worldwide</a></li>
+                    <!-- <li><a href="#">TBD</a></li> -->
+                </ul>
+                <p class="copyright">Copyright 2022 hyundai motor company. All right reserved.</p>
+            </div>
+        </footer>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/@coreui/coreui-pro@4.2.1/dist/js/coreui.bundle.min.js" crossorigin="anonymous"></script>
+	<script language="JavaScript" type="text/javascript" charset="utf-8" src="../js/jquery-3.6.0.min.js"></script>
+	<script language="JavaScript" type="text/javascript" charset="utf-8" src="../js/ui.js"></script>
+</body>
+</html>

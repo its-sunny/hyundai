@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, target-densitydpi=device-dpi"/>
+	<title>bluelink</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/@coreui/coreui-pro@4.2.1/dist/css/coreui.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../scss/style.css">
+</head>
+<body>
+	<div class="wrap">
+		<header>
+			<div class="section">
+				<h1 class="logo"><button class="logo-link"><span class="blind">bluelink uptimecare</span></button></h1>
+                <div class="util">
+                    <button class="link dropdown-toggle" data-coreui-toggle="dropdown" aria-expanded="false"><i class="ico-language"></i></button>
+                    <ul class="dropdown-menu language">
+                        <li><button class="lang-menu">English</button></li>
+                        <li><button class="lang-menu">Korean</button></li>
+                    </ul>
+                    <!-- <button class="link new"><i class="ico-alram new"></i></button> -->
+                    <button class="link"><i class="ico-user"></i><span>Hyundai Motor Group / John smith</span></button>
+                </div>
+			</div>
+		</header>
+        <div class="container">
+            <aside>
+                <ul class="menu">
+                    <li><button class="link-menu"><i class="ico-menu01"></i><span>Dashboard</span></button></li>
+                    <li><button class="link-menu"><i class="ico-menu02"></i><span>Preventive maintenance</span></button></li>
+                    <li><button class="link-menu"><i class="ico-menu03"></i><span>DTC analysis</span></button></li>
+                    <li><button class="link-menu"><i class="ico-menu04"></i><span>Vehicle information</span></button></li>
+                    <li><button class="link-menu new"><i class="ico-menu05"></i><span>Notice</span></button></li>
+                    <li class="on"><button class="link-menu"><i class="ico-menu06"></i><span>System Management</span></button>
+                        <ul class="depth">
+                            <li><button class="link-menu on">DTC Standard information</button></li>
+                            <li><button class="link-menu">Preventive maintenance standard infomation</button></li>
+                            <li><button class="link-menu">Notice Management</button></li>
+                            <li><button class="link-menu">Usage history by user</button></li>
+                            <li><button class="link-menu">Account management</button></li>
+                            <li><button class="link-menu">Menu management</button></li>
+                            <li><button class="link-menu">Permission management</button></li>
+                            <li><button class="link-menu">Code management</button></li>
+                            <li><button class="link-menu">Language management</button></li>
+                        </ul>
+                    </li>
+                </ul>
+                <button class="btn-aside btn-aside-close"></button>
+            </aside>
+            <div class="content">
+                <div class="w-content">
+                    <div class="title-area">
+                        <h3 class="page-title">DTC Standard information</h3>
+                        <div class="location">
+                            <span>System management</span>
+                            <span class="on">DTC Standard information</span>
+                        </div>
+                    </div>
+
+                    <div class="content-section systemDTC-section">
+                        <div class="article-title">
+                            <h4 class="title"><i class="ico-status ico-alert"></i>FC1245</h4>
+                            <div class="desc">
+                                <span class="desc-item">James Kang[adminmaster]</span>
+                                <span class="desc-item">Bluelink Fleet</span>
+                                <span class="desc-item">2022-05-29 17:35 22</span>
+                            </div>
+                        </div>
+                        <div class="notice-info">
+                            <ul class="noti-mid-info">
+                                <li>
+                                    <em>DTC Name(EN)</em>
+                                    <span>Input Over-current Above Normal Operation Fault</span>
+                                </li>
+                                <li>
+                                    <em>DTC Name(KR)</em>
+                                    <span>Input Over-current Above Normal Operation Fault</span>
+                                </li>
+                                <li>
+                                    <em>Model year</em>
+                                    <span>2022</span>
+                                </li>
+                                <li>
+                                    <em>Vehicle type</em>
+                                    <span>QZ FCEV</span>
+                                </li>
+                                <li>
+                                    <em>ECU ID</em>
+                                    <span>QZ8P</span>
+                                </li>
+                                <li>
+                                    <em>ECU name</em>
+                                    <span>ABS</span>
+                                </li>
+                                <li>
+                                    <em>System Name</em>
+                                    <span>charging system</span>
+                                </li>
+                                <li>
+                                    <em>Fleet Status</em>
+                                    <span>YES</span>
+                                </li>
+                            </ul>
+                            <ul class="noti-full-info">
+                                <li>
+                                    <em>Failure cause (EN)</em>
+                                    <div class="text-area">
+                                        <ul>
+                                            <li>[Computing error] - Confirmed if one or more of the following conditions are satisfied</li>
+                                            <li>1. Critical Error at Runtime(Stack overflow) </li>
+                                            <li>2. MMU(Memory Management Unit) Errors(MMU in activation)</li>
+                                            <li>3. Internal Protection Errors - Memory Protection Write/Read/Execute etc.</li>
+                                            <li>4. Instruction Errors - Opcode/Operand errors</li>
+                                            <li>5. Context Management Errors - Call Depth OV/UF, Context errors</li>
+                                            <li>6. System Bus/Peripheral Errors - Program Fetch/Data Access errors</li>
+                                            <li>7. Assertion Errors - Arithmetic Overflow</li>
+                                            <li>8. Inexact, Underflow, Overflow, Divide by Zero, Invalid Operation</li>
+                                            <li>8. Received operation failure data(from BSW)</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <em>Failure cause (KR)</em>
+                                    <div class="text-area">
+                                        <ul>
+                                            <li>[마이컴 연산 에러] - 아래 조건 중 1개 이상 만족 시 확정</li>
+                                            <li>1. Runtime시 발생할 수 있는 Critical Error(Stack overflow) </li>
+                                            <li>2. MMU(Memory Management Unit) Errors(MMU 활성 시)</li>
+                                            <li>3. Internal Protection Errors - Memory Protection Write/Read/Execute 등</li>
+                                            <li>4.Instruction Errors - Opcode/Operand errors</li>
+                                            <li>5. Context Management Errors - Call Depth OV/UF, Context errors</li>
+                                            <li>6. System Bus/Peripheral Errors - Program Fetch/Data Access errors</li>
+                                            <li>7. Assertion Errors - Arithmetic Overflow</li>
+                                            <li>8. Inexact, Underflow, Overflow, Divide by Zero, Invalid Operation</li>
+                                            <li>9. 마이컴 연산 고장 정보 수신시 (from BSW)</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <em>Action plan (EN)</em>
+                                    <div class="text-area">
+                                        <ul>
+                                            <li>1. Remove all BEQ connector (24V, GND, 12V) with engine-OFF → Check whether normal operation is performed after recombination</li>
+                                            <li>2. Check for short circuit between 24V-GND cables</li>
+                                            <li>3. Check for short circuit between 12V-GND cables</li>
+                                            <li>4. Check whether it is normal after replacing the unit (if there are no abnormalities above)</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <em>Action plan (KR)</em>
+                                    <div class="text-area">
+                                        <ul>
+                                            <li>시동 OFF상태에서 BEQ 연결 커넥터(24V,GND,12V) 전체 탈거  → 재결합 후 정상동작 여부 점검</li>
+                                            <li>24V-GND 케이블 간 쇼트 여부 점검</li>
+                                            <li>12V-GND 케이블 간 쇼트 여부 점검</li>
+                                            <li>단품 교체 후 정상 여부 확인(위 사항 이상 없을 시)</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="btn-wrap">
+                        <button type="button" class="btn btn-outline-secondary">Back to List</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/@coreui/coreui-pro@4.2.1/dist/js/coreui.bundle.min.js" crossorigin="anonymous"></script>
+	<script language="JavaScript" type="text/javascript" charset="utf-8" src="../js/jquery-3.6.0.min.js"></script>
+	<script language="JavaScript" type="text/javascript" charset="utf-8" src="../js/ui.js"></script>
+</body>
+</html>

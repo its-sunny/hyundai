@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, target-densitydpi=device-dpi"/>
+	<title>bluelink</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/@coreui/coreui-pro@4.2.1/dist/css/coreui.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" type="text/css" href="../scss/style.css">
+</head>
+<body>
+	<div class="wrap">
+		<header>
+			<div class="section">
+				<h1 class="logo"><button class="logo-link"><span class="blind">bluelink Fleet</span></button></h1>
+                <div class="util">
+                    <div class="dropdown">
+                        <button class="link dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">
+                            Germany
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Germany</a></li>
+                          <li><a class="dropdown-item" href="#">Korean</a></li>
+                          <li><a class="dropdown-item" href="#">English</a></li>
+                        </ul>
+                      </div>
+                    <button class="link"><span>Hyundai Motor Group / John smith</span></button>
+                    <div>
+                        <button class="link"><i class="ico-alram"></i></button>
+                        <button class="link"><i class="ico-logout"></i></button>
+                    </div>
+                </div>
+			</div>
+		</header>
+        <div class="container">
+            <aside>
+                <ul class="menu">
+                    <li class="on"><button class="link-menu"><i class="ico-menu01"></i><span>Dashboard</span></button></li>
+                    <li><button class="link-menu"><i class="ico-menu02"></i><span>Vehicle Control</span></button></li>
+                    <li><button class="link-menu"><i class="ico-menu03"></i><span>Predictive Maintenance</span></button>
+                        <ul class="depth">
+                            <li><button class="link-menu">Predictive Maintenance Status</button></li>
+                            <li><button class="link-menu">VIN List</button></li>
+                        </ul>
+                    </li>
+                    <li><button class="link-menu"><i class="ico-menu04"></i><span>DTC Code</span></button>
+                        <ul class="depth">
+                            <li><button class="link-menu">DTC Code</button></li>
+                            <li><button class="link-menu">DTC Status Check</button></li>
+                            <li><button class="link-menu">Monthly Report History</button></li>
+                        </ul>
+                    </li>
+                    <li><button class="link-menu"><i class="ico-menu05"></i><span>Maintenance</span></button>
+                        <ul class="depth">
+                            <li><button class="link-menu">Maintenance Status</button></li>
+                            <li><button class="link-menu">Maintenance History</button></li>
+                        </ul>
+                    </li>
+                    <li><button class="link-menu"><i class="ico-menu06"></i><span>Safety Control</span></button></li>
+                    <li><button class="link-menu"><i class="ico-menu07"></i><span>Driving Analysis</span></button></li>
+                    <li><button class="link-menu"><i class="ico-menu08"></i><span>Communications</span></button>
+                        <ul class="depth">
+                            <li><button class="link-menu">Notice Board</button></li>
+                            <li><button class="link-menu">Q&A</button></li>
+                        </ul>
+                    </li>
+                    <li><button class="link-menu"><i class="ico-menu09"></i><span>Reference Info.</span></button>
+                        <ul class="depth">
+                            <li><button class="link-menu">Vehicle Mgt.</button></li>
+                            <li><button class="link-menu">Business Vehicle Mgt.</button></li>
+                            <li><button class="link-menu">Provisioning Mgt.</button></li>
+                            <li><button class="link-menu">Fleet Vehicle Group Mgt.</button></li>
+                            <li><button class="link-menu">Maintenance Mgt.</button></li>
+                            <li><button class="link-menu">Dealer Mapping Mgt.</button></li>
+                        </ul>
+                    </li>
+                    <li><button class="link-menu"><i class="ico-menu10"></i><span>System Mgt.</span></button>
+                        <ul class="depth">
+                            <li><button class="link-menu">Notice Board Mgt.</button></li>
+                            <li><button class="link-menu">User Usage History</button></li>
+                            <li><button class="link-menu">Business Mgt.</button></li>
+                            <li><button class="link-menu">Account Mgt.</button></li>
+                            <li><button class="link-menu">Menu Mgt.</button></li>
+                            <li><button class="link-menu">Code Mgt.</button></li>
+                            <li><button class="link-menu">Authority Mgt.</button></li>
+                            <li><button class="link-menu">SMS Mgt.</button></li>
+                            <li><button class="link-menu">Language Mgt.</button></li>
+                        </ul>
+                    </li>
+                </ul>
+                <button class="btn-aside btn-aside-close"></button>
+            </aside>
+            <div class="content">
+                <div class="w-content">
+                    <div class="title-area">
+                        <h3 class="page-title">Dashboard</h3>
+                    </div>
+                    
+                    <div class="dashboard">
+                        <div class="flex-section">
+                            <div class="flex-item">
+                                <span>Registered Vehicles</span>
+                                <div>
+                                    <strong class="text">350 <em>EA</em></strong>
+                                </div>
+                            </div>
+                            <div class="sm-section activation-status">
+                                <h3 class="title">Activation Status
+                                    <button type="button" class="btn btn-tooltip" data-coreui-toggle="tooltip" data-coreui-placement="bottom" title="Tooltip text"><span class="blind">Tooltip</span></button>
+                                </h3>
+                                <div class="box-group">
+                                    <div class="vehicle">
+                                        <!-- <h4 class="s-title">Vehicle Type/Country </h4> -->
+                                        <ul>
+                                            <li>
+                                                <span class="img-country"><img src="../assets/images/ico-country01.png" alt=""></span>
+                                                <span class="text">ABC Fleet</span>
+                                                <span class="text">QZ FCEV</span>
+                                                <span class="text"><strong>50</strong> <em>EA</em></span>
+                                            </li>
+                                            <li>
+                                                <span class="img-country"><img src="../assets/images/ico-country02.png" alt=""></span>
+                                                <span class="text">XYZ Fleet</span>
+                                                <span class="text">PSEV</span>
+                                                <span class="text"><strong>70</strong> <em>EA</em></span>
+                                            </li>
+                                            <li>
+                                                <span class="img-country"><img src="../assets/images/ico-country01.png" alt=""></span>
+                                                <span class="text">ABC Fleet</span>
+                                                <span class="text">QZ FCEV</span>
+                                                <span class="text"><strong>50</strong> <em>EA</em></span>
+                                            </li>
+                                            <li>
+                                                <span class="img-country"><img src="../assets/images/ico-country02.png" alt=""></span>
+                                                <span class="text">XYZ Fleet</span>
+                                                <span class="text">PSEV</span>
+                                                <span class="text"><strong>70</strong> <em>EA</em></span>
+                                            </li>
+                                            <li>
+                                                <span class="img-country"><img src="../assets/images/ico-country03.png" alt=""></span>
+                                                <span class="text">ABC Fleet</span>
+                                                <span class="text">QZ FCEV</span>
+                                                <span class="text"><strong>50</strong> <em>EA</em></span>
+                                            </li>
+                                            <li>
+                                                <span class="img-country"><img src="../assets/images/ico-country04.png" alt=""></span>
+                                                <span class="text">XYZ Fleet</span>
+                                                <span class="text">PSEV</span>
+                                                <span class="text"><strong>70</strong> <em>EA</em></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn-view-status btn-all"><span>전체보기</span></button>
+                            </div>
+                            <div class="sm-section activation-status">
+                                <h3 class="title">Inspection Required Status <em>(7 days)</em></h3>
+                                <div class="box-group">
+                                    <div class="vehicle">
+                                        <ul>
+                                            <li>
+                                                <span class="img-country"><img src="../assets/images/ico-country03.png" alt=""></span>
+                                                <span class="text">ABC Fleet</span>
+                                                <span class="text">QZ FCEV</span>
+                                                <span class="text"><strong>50</strong> <em>EA</em></span>
+                                            </li>
+                                            <li>
+                                                <span class="img-country"><img src="../assets/images/ico-country04.png" alt=""></span>
+                                                <span class="text">XYZ Fleet</span>
+                                                <span class="text">PSEV</span>
+                                                <span class="text"><strong>70</strong> <em>EA</em></span>
+                                            </li>
+                                            <li>
+                                                <span class="img-country"><img src="../assets/images/ico-country01.png" alt=""></span>
+                                                <span class="text">ABC Fleet</span>
+                                                <span class="text">QZ FCEV</span>
+                                                <span class="text"><strong>50</strong> <em>EA</em></span>
+                                            </li>
+                                            <li>
+                                                <span class="img-country"><img src="../assets/images/ico-country02.png" alt=""></span>
+                                                <span class="text">XYZ Fleet</span>
+                                                <span class="text">PSEV</span>
+                                                <span class="text"><strong>70</strong> <em>EA</em></span>
+                                            </li>
+                                            <li>
+                                                <span class="img-country"><img src="../assets/images/ico-country04.png" alt=""></span>
+                                                <span class="text">ABC Fleet</span>
+                                                <span class="text">QZ FCEV</span>
+                                                <span class="text"><strong>50</strong> <em>EA</em></span>
+                                            </li>
+                                            <li>
+                                                <span class="img-country"><img src="../assets/images/ico-country03.png" alt=""></span>
+                                                <span class="text">XYZ Fleet</span>
+                                                <span class="text">PSEV</span>
+                                                <span class="text"><strong>70</strong> <em>EA</em></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn-view-status btn-all"><span>전체보기</span></button>
+                            </div>
+                        </div>
+
+
+                        <div class="flex-box">
+                            <div class="section flex-item graph-bar-list">
+                                <em class="title">Details of Predictive Maintenance
+                                    <button type="button" class="btn btn-tooltip" data-coreui-toggle="tooltip" data-coreui-placement="bottom" title="Tooltip text"><span class="blind">Tooltip</span></button>
+                                </em>
+                                <div class="graph-box">
+                                    <em class="title">Good</em>
+                                    <div class="graph-draw"></div>
+                                    <span>75 <em>EA</em></span>
+                                </div>   
+                                <div class="graph-box">
+                                    <em class="title">Caution</em>
+                                    <div class="graph-draw"></div>
+                                    <span>15 <em>EA</em></span>
+                                </div>
+                                <div class="graph-box">
+                                    <em class="title">Alert</em>
+                                    <div class="graph-draw"></div>
+                                    <span>15 <em>EA</em></span>
+                                </div>
+                                <div class="graph-box">
+                                    <em class="title">Danger</em>
+                                    <div class="graph-draw"></div>
+                                    <span>15 <em>EA</em></span>
+                                </div>
+                                <div class="graph-box">
+                                    <em class="title">Unkown</em>
+                                    <div class="graph-draw"></div>
+                                    <span>15 <em>EA</em></span>
+                                </div>
+                            </div>
+                            <div class="section flex-item graph-bar-list">
+                                <em class="title">Details of Predictive Maintenance
+                                    <button type="button" class="btn btn-tooltip" data-coreui-toggle="tooltip" data-coreui-placement="bottom" title="Tooltip text"><span class="blind">Tooltip</span></button>
+                                </em>
+                                <!-- <span class="info-text">[Unit: number of vehicles]</span> -->
+                                <div class="graph-box">
+                                    <em class="title">Good</em>
+                                    <div class="graph-draw"></div>
+                                    <span>75 <em>EA</em></span>
+                                </div>   
+                                <div class="graph-box">
+                                    <em class="title">Caution</em>
+                                    <div class="graph-draw"></div>
+                                    <span>15 <em>EA</em></span>
+                                </div>
+                                <div class="graph-box">
+                                    <em class="title">Alert</em>
+                                    <div class="graph-draw"></div>
+                                    <span>15 <em>EA</em></span>
+                                </div>
+                                <div class="graph-box">
+                                    <em class="title">Danger</em>
+                                    <div class="graph-draw"></div>
+                                    <span>15 <em>EA</em></span>
+                                </div>
+                                <div class="graph-box">
+                                    <em class="title">Unkown</em>
+                                    <div class="graph-draw"></div>
+                                    <span>15 <em>EA</em></span>
+                                </div>                     
+                            </div>
+                        </div>
+
+                        <div class="section box-line">
+                            <p class="title">Notifications in the last 7 days
+                                <span>Nov 1, 2022 ~ Nov 7 2022</span>
+                            </p>
+                            <div class="flex-section box-gray">
+                                <div class="flex-item">
+                                    <span>High Voltage Battery</span>
+                                    <div>
+                                        <strong class="text">158<em>EA</em></strong>
+                                    </div>
+                                </div>
+                                <div class="flex-item">
+                                    <span>Collision Occurrence</span>
+                                    <div>
+                                        <strong class="text">83<em>EA</em></strong>
+                                    </div>
+                                </div>
+                                <div class="flex-item">
+                                    <span>Hydrogen Tank <em>( Overcharge/Overheat/Overcooling )</em></span>
+                                    <div>
+                                        <strong class="text">21<em>EA</em></strong>
+                                    </div>
+                                </div>
+                                <div class="flex-item">
+                                    <span>Hydrogen Leak Detection</span>
+                                    <div>
+                                        <strong class="text">15<em>EA</em></strong>
+                                    </div>
+                                </div>
+                                <div class="flex-item">
+                                    <span>High VoltageInsulation Anomalies</span>
+                                    <div>
+                                        <strong class="text">1,234<em>EA</em></strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="section box-line">
+                            <p class="title">Driving Analysis
+                                <span>Nov 1, 2022 ~ Nov 7 2022</span>
+                            </p>
+                            <div class="flex-section box-gray">
+                                <div class="flex-item">
+                                    <span>Driving Dist.</span>
+                                    <div class="type2">
+                                        <strong class="text">123,456,789<em>㎞</em></strong>
+                                    </div>
+                                </div>
+                                <div class="flex-item">
+                                    <span>Driving Hr.</span>
+                                    <div class="type2">
+                                        <strong class="text">1,234<em>mim</em></strong>
+                                    </div>
+                                </div>
+                                <div class="flex-item">
+                                    <span>Hydrogen Consumption</span>
+                                    <div class="type2">
+                                        <strong class="text">4,568<em>㎏</em></strong>
+                                    </div>
+                                </div>
+                                <div class="flex-item">
+                                    <span>Hydrogen Efficiency</span>
+                                    <div class="type2">
+                                        <strong class="text">8,901<em>㎞/100㎏</em></strong>
+                                    </div>
+                                </div>
+                                <div class="flex-item">
+                                    <span>CO&sup2; Savings</span>
+                                    <div class="type2">
+                                        <strong class="text">2,345<em>㎏</em></strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="logo"><button class="logo-link"><span class="blind">HYUNDAI MOTOR GROUP</span></button></div>
+            <div class="f-link">
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Legal Notice</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Hyundai Worldwide</a></li>
+                    <!-- <li><a href="#">TBD</a></li> -->
+                </ul>
+                <p class="copyright">Copyright 2022 hyundai motor company. All right reserved.</p>
+            </div>
+        </footer>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/@coreui/coreui-pro@4.2.1/dist/js/coreui.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script language="JavaScript" type="text/javascript" charset="utf-8" src="../js/jquery-3.6.0.min.js"></script>
+	<script language="JavaScript" type="text/javascript" charset="utf-8" src="../js/ui.js"></script>
+</body>
+</html>

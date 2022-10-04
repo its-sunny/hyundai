@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, target-densitydpi=device-dpi"/>
+	<title>bluelink</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/@coreui/coreui-pro@4.2.1/dist/css/coreui.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../scss/dataTables.bootstrap4.css">
+	<link rel="stylesheet" type="text/css" href="../scss/style.css">
+</head>
+<body>
+	<div class="wrap">
+		<header>
+			<div class="section">
+				<h1 class="logo"><button class="logo-link"><span class="blind">bluelink uptimecare</span></button></h1>
+                <div class="util">
+                    <button class="link dropdown-toggle" data-coreui-toggle="dropdown" aria-expanded="false"><i class="ico-language"></i></button>
+                    <ul class="dropdown-menu language">
+                        <li><button class="lang-menu">English</button></li>
+                        <li><button class="lang-menu">Korean</button></li>
+                    </ul>
+                    <!-- <button class="link new"><i class="ico-alram new"></i></button> -->
+                    <button class="link"><i class="ico-user"></i><span>Hyundai Motor Group / John smith</span></button>
+                </div>
+			</div>
+		</header>
+        <div class="container">
+            <aside>
+                <ul class="menu">
+                    <li><button class="link-menu"><i class="ico-menu01"></i><span>Dashboard</span></button></li>
+                    <li><button class="link-menu"><i class="ico-menu02"></i><span>Preventive maintenance</span></button></li>
+                    <li><button class="link-menu"><i class="ico-menu03"></i><span>DTC analysis</span></button></li>
+                    <li><button class="link-menu"><i class="ico-menu04"></i><span>Vehicle information</span></button></li>
+                    <li><button class="link-menu new"><i class="ico-menu05"></i><span>Notice</span></button></li>
+                    <li class="on"><button class="link-menu"><i class="ico-menu06"></i><span>System Management</span></button>
+                        <ul class="depth">
+                            <li><button class="link-menu">DTC Standard information</button></li>
+                            <li><button class="link-menu">Preventive maintenance standard infomation</button></li>
+                            <li><button class="link-menu">Notice Management</button></li>
+                            <li><button class="link-menu">Usage history by user</button></li>
+                            <li><button class="link-menu">Account management</button></li>
+                            <li><button class="link-menu">Menu management</button></li>
+                            <li><button class="link-menu on">Permission management</button></li>
+                            <li><button class="link-menu">Code management</button></li>
+                            <li><button class="link-menu">Language management</button></li>
+                        </ul>
+                    </li>
+                </ul>
+                <button class="btn-aside btn-aside-close"></button>
+            </aside>
+            <div class="content">
+                <div class="w-content">
+                    <div class="title-area">
+                        <h3 class="page-title">Permission management</h3>
+                        <div class="location">
+                            <span>System management</span>
+                            <span class="on">Permission management</span>
+                        </div>
+                    </div>
+
+                    <div class="search-wrap">
+                        <div class="group-box">
+                            <div class="inp-group">
+                                <label for="date" class="form-label">Select Period</label>
+                                <div class="datepicker-wrap">
+                                    <div data-coreui-locale="en-US" data-coreui-toggle="date-range-picker"></div>
+                                </div>
+                            </div>
+                            <div class="inp-group">
+                                <div class="period">
+                                    <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+                                    <label class="btn btn-secondary" for="option1">1 Week</label>
+                                    
+                                    <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                                    <label class="btn btn-secondary" for="option2">1 Month</label>
+                                    
+                                    <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
+                                    <label class="btn btn-secondary" for="option3">6 Month</label>
+                                    
+                                    <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
+                                    <label class="btn btn-secondary" for="option4">1 Year</label>
+                                </div>
+                            </div>
+                            <div class="inp-group">
+                                <label for="inp6" class="form-label">Country</label>
+                                <select class="form-select" id="inp6">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="inp-group">
+                                <label for="inp7" class="form-label">Fleet</label>
+                                <select class="form-select" id="inp7">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="group-box">
+                            <div class="inp-group">
+                                <label for="inp3" class="form-label">Vehicle type</label>
+                                <select class="form-select" id="inp3">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="inp-group">
+                                <label for="inp4" class="form-label">Status</label>
+                                <select class="form-select" id="inp4">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="inp-group">
+                                <label for="inp5" class="form-label">Item</label>
+                                <select class="form-select" id="inp5">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="inp-group hasbtn">
+                                <label for="inp1" class="form-label">VIN number</label>
+                                <input type="text" class="form-control" id="inp1" placeholder="Enter VIN number">
+                                <div class="btn-search">
+                                    <button type="button" class="btn btn-primary ico-search"><span class="blind">검색</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="table-wrap">
+                            <h4 class="stitle">Result <span class="col-point3">157</span></h4>
+                            <div class="tbl-btn-group">
+                                <!-- select -->
+                                <select class="form-select" aria-label="Default select">
+                                    <option selected>10</option>
+                                    <option value="1">10</option>
+                                    <option value="2">50</option>
+                                    <option value="3">100</option>
+                                </select>
+                                <!-- //select -->
+                                <button type="button" class="btn btn-outline-secondary btn-sm ico-down">Excel Download</button>
+                            </div>
+                            <table class="table table-col datatable dataTable no-footer">
+                                <colgroup>
+                                    <col style="width:10%">
+                                    <col style="width:10%">
+                                    <col style="width:15%">
+                                    <col style="width:10%">
+                                    <col style="width:10%">
+                                    <col style="width:10%">
+                                    <col style="width:13%">
+                                    <col style="width:12%">
+                                    <col style="width:10%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="sorting sorting_asc" tabindex="0">No. <span>sort</span></th>
+                                        <th class="sorting sorting_asc" tabindex="0">Grade <span>sort</span></th>
+                                        <th class="sorting sorting_asc" tabindex="0">VIN <span>sort</span></th>
+                                        <th class="sorting sorting_asc" tabindex="0">Vehicle Type <span>sort</span></th>
+                                        <th class="sorting sorting_asc" tabindex="0">Country <span>sort</span></th>
+                                        <th class="sorting sorting_asc" tabindex="0">Fleet <span>sort</span></th>
+                                        <th class="sorting sorting_asc" tabindex="0">Item <span>sort</span></th>
+                                        <th class="sorting sorting_asc" tabindex="0">Prediction Info <span>sort</span></th>
+                                        <th class="sorting sorting_asc" tabindex="0">Date <span>sort</span></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>157</th>
+                                        <td><span class="flag-item flag-good">GOOD</span></td>
+                                        <td>KMFXXXXXXXX123456</td>
+                                        <td>IQZ FCEV</td>
+                                        <td>Germany</td>
+                                        <td>HMM</td>
+                                        <td>high voltage battery</td>
+                                        <td>SoH</td>
+                                        <td>2022-06-30</td>
+                                    </tr>
+                                    <tr>
+                                        <th>157</th>
+                                        <td><span class="flag-item flag-caution">Caution</span></td>
+                                        <td>KMFXXXXXXXX123456</td>
+                                        <td>IQZ FCEV</td>
+                                        <td>Germany</td>
+                                        <td>HMM</td>
+                                        <td>high voltage battery</td>
+                                        <td>SoH</td>
+                                        <td>2022-06-30</td>
+                                    </tr>
+                                    <tr>
+                                        <th>157</th>
+                                        <td><span class="flag-item flag-danger">Danger</span></td>
+                                        <td>KMFXXXXXXXX123456</td>
+                                        <td>IQZ FCEV</td>
+                                        <td>Germany</td>
+                                        <td>HMM</td>
+                                        <td>high voltage battery</td>
+                                        <td>SoH</td>
+                                        <td>2022-06-30</td>
+                                    </tr>
+                                    <tr>
+                                        <th>157</th>
+                                        <td><span class="flag-item flag-alert">Alert</span></td>
+                                        <td>KMFXXXXXXXX123456</td>
+                                        <td>IQZ FCEV</td>
+                                        <td>Germany</td>
+                                        <td>HMM</td>
+                                        <td>high voltage battery</td>
+                                        <td>SoH</td>
+                                        <td>2022-06-30</td>
+                                    </tr>
+                                    <tr>
+                                        <th>157</th>
+                                        <td><span class="flag-item flag-unknown">Unknown</span></td>
+                                        <td>KMFXXXXXXXX123456</td>
+                                        <td>IQZ FCEV</td>
+                                        <td>Germany</td>
+                                        <td>HMM</td>
+                                        <td>high voltage battery</td>
+                                        <td>SoH</td>
+                                        <td>2022-06-30</td>
+                                    </tr>
+                                    <tr>
+                                        <th>157</th>
+                                        <td><span class="flag-item flag-unknown">Unknown</span></td>
+                                        <td>KMFXXXXXXXX123456</td>
+                                        <td>IQZ FCEV</td>
+                                        <td>Germany</td>
+                                        <td>HMM</td>
+                                        <td>high voltage battery</td>
+                                        <td>SoH</td>
+                                        <td>2022-06-30</td>
+                                    </tr>
+                                    <tr>
+                                        <th>157</th>
+                                        <td><span class="flag-item flag-unknown">Unknown</span></td>
+                                        <td>KMFXXXXXXXX123456</td>
+                                        <td>IQZ FCEV</td>
+                                        <td>Germany</td>
+                                        <td>HMM</td>
+                                        <td>high voltage battery</td>
+                                        <td>SoH</td>
+                                        <td>2022-06-30</td>
+                                    </tr>
+                                    <tr>
+                                        <th>157</th>
+                                        <td><span class="flag-item flag-unknown">Unknown</span></td>
+                                        <td>KMFXXXXXXXX123456</td>
+                                        <td>IQZ FCEV</td>
+                                        <td>Germany</td>
+                                        <td>HMM</td>
+                                        <td>high voltage battery</td>
+                                        <td>SoH</td>
+                                        <td>2022-06-30</td>
+                                    </tr>
+                                    <tr>
+                                        <th>157</th>
+                                        <td><span class="flag-item flag-unknown">Unknown</span></td>
+                                        <td>KMFXXXXXXXX123456</td>
+                                        <td>IQZ FCEV</td>
+                                        <td>Germany</td>
+                                        <td>HMM</td>
+                                        <td>high voltage battery</td>
+                                        <td>SoH</td>
+                                        <td>2022-06-30</td>
+                                    </tr>
+                                    <tr>
+                                        <th>157</th>
+                                        <td><span class="flag-item flag-unknown">Unknown</span></td>
+                                        <td>KMFXXXXXXXX123456</td>
+                                        <td>IQZ FCEV</td>
+                                        <td>Germany</td>
+                                        <td>HMM</td>
+                                        <td>high voltage battery</td>
+                                        <td>SoH</td>
+                                        <td>2022-06-30</td>
+                                    </tr>
+                                    <!-- 데이타 없을 시 -->
+                                    <tr>
+                                        <td class="nodata" colspan="9">
+                                            <p><i class="tbl-ico-nodata"></i> There are no search results.</p>
+                                        </td>
+                                    </tr>
+                                    <!-- // 데이타 없을 시 -->
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="align-center">
+                            <div class="pagination-wrap">
+                                <div class="pagination">
+                                    <span class="page-item">
+                                        <a class="page-link page-prev" href="#" aria-label="Previous">
+                                            <span aria-hidden="true"></span>
+                                        </a>
+                                    </span>
+                                    <span class="page-item active"><a class="page-link" href="#">1</a></span>
+                                    <span class="page-item"><a class="page-link" href="#">2</a></span>
+                                    <span class="page-item"><a class="page-link" href="#">3</a></span>
+                                    <span class="page-item">
+                                        <a class="page-link page-next" href="#" aria-label="Next">
+                                            <span aria-hidden="true"></span>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/@coreui/coreui-pro@4.2.1/dist/js/coreui.bundle.min.js" crossorigin="anonymous"></script>
+	<script language="JavaScript" type="text/javascript" charset="utf-8" src="../js/jquery-3.6.0.min.js"></script>
+	<script language="JavaScript" type="text/javascript" charset="utf-8" src="../js/ui.js"></script>
+</body>
+</html>
